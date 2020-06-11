@@ -18,7 +18,7 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Привет, мирфывфывfdgdfg!sdfsdfsdf</h1>
+    <h1>Привет, мир!</h1>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

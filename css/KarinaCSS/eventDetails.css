@@ -8,9 +8,9 @@ main{
     flex-direction: column;
     /*height: 100vh;*/
 }
-.MainBlock{
+/* .MainBlock{
     width: 960px;
-}
+} */
 #headerInfo{
     display: none;
 }
@@ -54,10 +54,6 @@ main{
 
 /*---------------------gallery-----------------------*/
 
-.container{
-    /*width: 90%;*/
-    margin: 20px auto;
-}
 
 .img-gallery-magnific{
     display: flex;

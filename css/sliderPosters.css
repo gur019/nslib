@@ -29,7 +29,9 @@
     height: 480px;
     /*background-color: blue;*/
 }
-
+.Disabled{
+	display: none;
+}
 
 .slider {
     width: 50%;

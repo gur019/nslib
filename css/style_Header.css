@@ -1,0 +1,129 @@
+header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	/*background-color: var(--bg_header);*/
+	background: var(--bg_header);
+}
+
+#headerDiv{
+	display: flex;
+	height: 80px;
+	/*margin: 5px 0 5px 0;*/
+	/*width: 960px;*/
+	/*background-color: var(--bg_header);*/
+}
+#hLogo{
+	display: flex;
+	/*justify-content: center;*/
+	align-items: center;
+	/*background-color: blanchedalmond;*/
+	width: 50%;
+	height: 100%;
+}
+#hLogo img{
+	height: 60px;
+}
+#hLogo a{
+	text-decoration: none;
+}
+#hLogo h1{
+	font-family: var(--font_Famaly);
+	font-size: var(--font_Size_Header_lodo);
+	margin: 0 0 0 10px;
+	/*line-height: 90%;*/
+	/*text-align: center;*/
+	cursor: pointer;
+	color: #eee;
+	text-shadow: 0 0 4px rgba(0,0,0,.5);
+}
+#spacing{
+	/*letter-spacing: 7px;*/
+	/*margin: 0 0 0 6px;*/
+}
+#hMenu{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	/*background-color: aqua;*/
+	width: 50%;
+	height: 100%;
+}
+.menuBG{
+	cursor: pointer;
+	color: white;
+	z-index: 10;
+	margin: 0 0 0 40px;
+}
+
+.hMenuA{
+	/*margin: 0 10px;*/
+	font-family: var(--font_Famaly);
+	font-size: 15px;
+	color: #eee;
+}
+.hMenuA:hover{
+	filter: drop-shadow(2px 4px 6px black);
+}
+
+#headerInfo{
+	/*width: 960px;*/
+	height: fit-content;
+	/*border-top: 1px solid #eee;*/
+}
+.overlayMenu a {
+	font-family: var(--font_Famaly);
+	line-height: 15px;
+}
+
+.headerMK{
+	height: 50px !important;
+	/*margin: 0 0 0 20px !important;*/
+	filter: opacity(0.6) !important;
+}
+.headerMKA{
+	margin: 0 0 0 20px;
+}
+
+.headerMKH1{
+	font-size: 10px !important;
+	color: #c7c7c7 !important;
+	text-shadow: 0 0 0 rgba(0,0,0,1) !important;
+}
+
+
+.headerLink{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 960px;
+	height: 40px;
+	border-top: 1px solid #eee;
+}
+
+.headerIconLink{
+	height: 30px;
+	margin: 5px;
+}
+.headerIconLink:hover{
+	filter: drop-shadow(2px 4px 6px black);
+}
+
+
+/*-----------SLICK---------------*/
+.slickSliderBlock p{
+	padding: 0 0 0 20px;
+	font-family: var(--font_Famaly);
+	font-size: 14px;
+	line-height: 20px;
+	/*color: #142638;*/
+	color: #eeeeee;
+}
+.slickSliderBlock a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+}

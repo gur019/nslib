@@ -1,5 +1,5 @@
 <!--<!DOCTYPE html>-->
-<html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
 <head>
     <meta charset="utf-8" />
     <!-- ----------------bootstrap-------------------- -->
@@ -8,7 +8,7 @@
     <title>ННБ Владикавказ</title>
 
     <link rel="stylesheet" href="css/style_Global_Vars.css">
-    <link rel="stylesheet" href="css/style_index.css">
+    <link rel="stylesheet" href="css/style_Main.css">
     <link rel="stylesheet" href="css/sliderPosters.css">
     <link rel="stylesheet" href="css/style_Header.css">
 
@@ -33,7 +33,7 @@
     <script src="js/structNNB.js"></script>
 
     <!-- ----------------bootstrap-------------------- -->
-   <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+<!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
@@ -44,7 +44,7 @@
 <body>
 <main>
     <header>
-      <?php include 'templates/includes/header.html';?>
+        <th:block th:include="includes/header.html"/>
     </header>
 
     <div class="MainBlock container">
@@ -53,10 +53,40 @@
             <span style="color: #142638;">Электронная библиотека</span>
         </div>
         <div class="SearchBlock">
-          <?php include 'templates/includes/input_search_mainPage.html';?>
+            <th:block th:include="includes/input_search_mainPage.html"/>
         </div>
+        <div class="InfoBlockSpan InfoBlockSpanPoster">
+            <span>Афиша</span>
+        </div>
+        <div class="PosterBlock">
+            <div class="Posters">
+                <section id="slider_main" class="center slider">
+                        <div th:each="nnbEvent : ${nnbEvents}">
+                            <img th:src="@{/restService/poster/{id} (id = ${nnbEvent.id})}"/>
+<!--                            <img th:src="/restService/poster/${nnbEvent.id}">-->
+                        </div>
+                </section>
+            </div>
+            <div class="PostersInfo">
+                <div th:each="nnbEvent, iterStat : ${nnbEvents}" th:id="description_ + ${iterStat.count - 1}" class="PostersInfoBlock">
+                    <div class="PostersInfoDate"><span class="PostersInfoDateDate PostersInfoDateDateWidth" th:text="${nnbEvent.geteDay()}"></span>
+                        <span class="PostersInfoDateText" th:text="${months[nnbEvent.geteMonth()]}"></span>
+                    </div>
+                    <div class="PostersInfoDescription">
+                        <span class="PostersInfoDescriptionHeader" th:text="${nnbEvent.geteName()}"></span>
+                        <span class="PostersInfoDescriptionFooter" th:text="${nnbEvent.geteDescription()}"></span>
+                        <span class="PostersInfoDescriptionFooterDepartment" th:text="${nnbEvent.geteLocation()}"></span>
+                    </div>
 
-        <?php include 'templates/includes/posters.html';?>
+                    <div th:if="${nnbEvent.eMinute < 10}" class="PostersInfoTime">
+                        <span class="PostersInfoDateDate PostersInfoDateTimeWidth" th:text="${nnbEvent.geteHour() + ':0' + nnbEvent.geteMinute()}"></span>
+                    </div>
+                    <div th:if="${nnbEvent.eMinute >= 10}" class="PostersInfoTime">
+                        <span class="PostersInfoDateDate PostersInfoDateTimeWidth" th:text="${nnbEvent.geteHour() + ':' + nnbEvent.geteMinute()}"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="GalleryBlock">
             <div class="InfoBlockSpan InfoBlockSpanGallery">
@@ -64,83 +94,95 @@
             </div>
 
             <div class="GalleryBlockPhoto">
-               <div class="GalleryPhoto GalleryPhotoMargin">
-                   <figure class="GalleryFigure">
-                       <div class="GalleryFigureDiv">
-                           <img src="/media/mainPage/gallery/g1.jpg">
-                       </div>
-                       <figcaption class="GalleryFigcaption">
-                           <h2>Заголовок</h2>
-                           <p>Тут типа будет описание</p>
-                           <a href="">Подробнее</a>
-                       </figcaption>
-                   </figure>
-               </div>
+                <div th:each="arcEvent, iterStat : ${archiveEvents}" th:id="arcEv_ + ${arcEvent.getId()}" class="GalleryPhoto GalleryPhotoMargin">
+                    <figure class="GalleryFigure">
+                        <div class="GalleryFigureDiv">
+                            <img style="width: 100%; height: 100%" th:src='@{/restService/ArcPoster(arcPosterId=${arcEvent.getId()})}'>
+                        </div>
+                        <figcaption class="GalleryFigcaption">
+                            <h2 th:text="${arcEvent.geteName()}"></h2>
+                            <p th:text="${arcEvent.geteDescription()}"></p>
+                            <a href="">Подробнее</a>
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+<!--                <div class="GalleryPhoto GalleryPhotoMargin">-->
+<!--                    <figure class="GalleryFigure">-->
+<!--                        <div class="GalleryFigureDiv">-->
+<!--                            <img src="/media/mainPage/gallery/g1.jpg">-->
+<!--                        </div>-->
+<!--                        <figcaption class="GalleryFigcaption">-->
+<!--                            <h2>Заголовок</h2>-->
+<!--                            <p>Тут типа будет описание</p>-->
+<!--                            <a href="">Подробнее</a>-->
+<!--                        </figcaption>-->
+<!--                    </figure>-->
+<!--                </div>-->
 
 
-               <div class="GalleryPhoto GalleryPhotoMargin">
-                   <figure class="GalleryFigure">
-                       <div class="GalleryFigureDiv">
-                           <img src="media/mainPage/gallery/g2.jpg">
-                       </div>
-                       <figcaption class="GalleryFigcaption">
-                           <h2>Заголовок</h2>
-                           <p>Тут типа будет описание</p>
-                           <a href="">Подробнее</a>
-                       </figcaption>
-                   </figure>
-               </div>
-               <div class="GalleryPhoto GalleryPhotoMargin">
-                   <figure class="GalleryFigure">
-                       <div class="GalleryFigureDiv">
-                           <img src="media/mainPage/gallery/g3.jpg">
-                       </div>
-                       <figcaption class="GalleryFigcaption">
-                           <h2>Заголовок</h2>
-                           <p>Тут типа будет описание</p>
-                           <a href="">Подробнее</a>
-                       </figcaption>
-                   </figure>
-               </div>
-               <div class="GalleryPhoto GalleryPhotoMargin">
-                   <figure class="GalleryFigure">
-                       <div class="GalleryFigureDiv">
-                           <img src="media/mainPage/gallery/g4.jpg">
-                       </div>
-                       <figcaption class="GalleryFigcaption">
-                           <h2>Заголовок</h2>
-                           <p>Тут типа будет описание</p>
-                           <a href="">Подробнее</a>
-                       </figcaption>
-                   </figure>
-               </div>
-               <div class="GalleryPhoto GalleryPhotoMargin">
-                   <figure class="GalleryFigure">
-                       <div class="GalleryFigureDiv">
-                           <img src="media/mainPage/gallery/g5.jpg">
-                       </div>
-                       <figcaption class="GalleryFigcaption">
-                           <h2>Заголовок</h2>
-                           <p>Тут типа будет описание</p>
-                           <a href="">Подробнее</a>
-                       </figcaption>
-                   </figure>
-               </div>
-               <div class="GalleryPhoto GalleryPhotoMargin">
-                   <figure class="GalleryFigure">
-                       <div class="GalleryFigureDiv">
-                           <img src="media/mainPage/gallery/g6.jpg">
-                       </div>
-                       <figcaption class="GalleryFigcaption">
-                           <h2>Заголовок</h2>
-                           <p>Тут типа будет описание</p>
-                           <a href="">Подробнее</a>
-                       </figcaption>
-                   </figure>
-               </div>
+<!--                <div class="GalleryPhoto GalleryPhotoMargin">-->
+<!--                    <figure class="GalleryFigure">-->
+<!--                        <div class="GalleryFigureDiv">-->
+<!--                            <img src="media/mainPage/gallery/g2.jpg">-->
+<!--                        </div>-->
+<!--                        <figcaption class="GalleryFigcaption">-->
+<!--                            <h2>Заголовок</h2>-->
+<!--                            <p>Тут типа будет описание</p>-->
+<!--                            <a href="">Подробнее</a>-->
+<!--                        </figcaption>-->
+<!--                    </figure>-->
+<!--                </div>-->
+<!--                <div class="GalleryPhoto GalleryPhotoMargin">-->
+<!--                    <figure class="GalleryFigure">-->
+<!--                        <div class="GalleryFigureDiv">-->
+<!--                            <img src="media/mainPage/gallery/g3.jpg">-->
+<!--                        </div>-->
+<!--                        <figcaption class="GalleryFigcaption">-->
+<!--                            <h2>Заголовок</h2>-->
+<!--                            <p>Тут типа будет описание</p>-->
+<!--                            <a href="">Подробнее</a>-->
+<!--                        </figcaption>-->
+<!--                    </figure>-->
+<!--                </div>-->
+<!--                <div class="GalleryPhoto GalleryPhotoMargin">-->
+<!--                    <figure class="GalleryFigure">-->
+<!--                        <div class="GalleryFigureDiv">-->
+<!--                            <img src="media/mainPage/gallery/g4.jpg">-->
+<!--                        </div>-->
+<!--                        <figcaption class="GalleryFigcaption">-->
+<!--                            <h2>Заголовок</h2>-->
+<!--                            <p>Тут типа будет описание</p>-->
+<!--                            <a href="">Подробнее</a>-->
+<!--                        </figcaption>-->
+<!--                    </figure>-->
+<!--                </div>-->
+<!--                <div class="GalleryPhoto GalleryPhotoMargin">-->
+<!--                    <figure class="GalleryFigure">-->
+<!--                        <div class="GalleryFigureDiv">-->
+<!--                            <img src="media/mainPage/gallery/g5.jpg">-->
+<!--                        </div>-->
+<!--                        <figcaption class="GalleryFigcaption">-->
+<!--                            <h2>Заголовок</h2>-->
+<!--                            <p>Тут типа будет описание</p>-->
+<!--                            <a href="">Подробнее</a>-->
+<!--                        </figcaption>-->
+<!--                    </figure>-->
+<!--                </div>-->
+<!--                <div class="GalleryPhoto GalleryPhotoMargin">-->
+<!--                    <figure class="GalleryFigure">-->
+<!--                        <div class="GalleryFigureDiv">-->
+<!--                            <img src="media/mainPage/gallery/g6.jpg">-->
+<!--                        </div>-->
+<!--                        <figcaption class="GalleryFigcaption">-->
+<!--                            <h2>Заголовок</h2>-->
+<!--                            <p>Тут типа будет описание</p>-->
+<!--                            <a href="">Подробнее</a>-->
+<!--                        </figcaption>-->
+<!--                    </figure>-->
+<!--                </div>-->
             </div>
-
-
             <div class="GalleryLink">
                 <a href="/content/eventArchive">Посмотреть все</a>
             </div>
@@ -220,7 +262,7 @@
             </div>
         </div>
         <footer>
-          <?php include 'templates/includes/footer.html';?>
+            <th:block th:include="includes/footer.html"/>
         </footer>
     </div>
 

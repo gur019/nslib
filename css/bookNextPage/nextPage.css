@@ -1,0 +1,72 @@
+.PageNumBooks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 100px;*/
+    /*background-color: red;*/
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.pageNum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    /*font-size: 1.4em;*/
+    font-family: var(--font_Famaly);
+    cursor: pointer;
+    border: 1px solid lightgrey;
+}
+.pageNum:hover{
+    color: #eee;
+    background-color: var(--bg_button);
+    border: 1px solid var(--bg_button);
+
+}
+.activePage{
+    color: #eee;
+    background-color: var(--bg_button);
+    border: 1px solid var(--bg_button);
+}
+
+.arrowBack, .arrowNext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+.arrowBack{
+    transform: rotate(180deg);
+    background-image: url(../../media/searchBooks/nextPage/arrownext1.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.arrowNext{
+    background-image: url(../../media/searchBooks/nextPage/arrownext1.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.arrowDisabled{
+    filter: opacity(0.3);
+    cursor: default;
+}
+.ellipsis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    font-size: 1.4em;
+    cursor: default;
+}

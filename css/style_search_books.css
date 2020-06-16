@@ -1,0 +1,184 @@
+body{
+    background-color: #eee;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*height: 100vh;*/
+}
+
+.MainBlockSearch{
+    width: 960px;
+}
+
+
+.SearchBlock{
+    display: flex;
+    justify-content: center;
+}
+.searchForm{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin: 20px 0 0 0;
+}
+.FakeBoxInput{
+    display: flex;
+    margin: 10px 0 0 0;
+    background-color: #eee;
+    height: 45px;
+    box-shadow: var(--inputShadow);
+}
+.FakeBoxInputText{
+    width: 960px;
+    height: 45px;
+    background-color: rgba(0,0,0,0);
+    padding: 0 10px;
+    font-family: var(--font_Famaly);
+    font-size: var(--font_Size_Header_lodo);
+}
+
+
+.FakeBoxInputText::-webkit-input-placeholder {
+    font-family: 'myFont', var(--font_Famaly);
+    font-size: var(--font_Size_Header_lodo);
+}
+
+.FakeBoxInputText:-ms-input-placeholder {
+    font-family: 'myFont', var(--font_Famaly);
+    font-size: var(--font_Size_Header_lodo);
+}
+
+.FakeBoxInputText:-moz-placeholder {
+    font-family: 'myFont', var(--font_Famaly);
+    font-size: var(--font_Size_Header_lodo);
+}
+
+.FakeBoxInputText::-moz-placeholder {
+    font-family: 'myFont', var(--font_Famaly);
+    font-size: var(--font_Size_Header_lodo);
+}
+
+
+.FakeBoxInputButton{
+    width: 150px;
+    height: 35px;
+    margin: 10px 0 0 0;
+    background-color: var(--bg_button);
+    color: #eee;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(85,159,202, 0.2);
+    transition: 0.2s;
+    font-size: 1em;
+    font-family: var(--font_Famaly);
+}
+.FakeBoxInputButton:hover{
+    transition: 0.2s;
+    box-shadow: 0px 0px 10px rgb(71, 136, 103);
+    /*background-color: gainsboro;*/
+}
+
+.overlayMenu a {
+    font-family: var(--font_Famaly);
+    line-height: 15px;
+}
+
+.SearchInfo{
+    display: flex;
+    justify-content: center;
+    /*margin: 20px 0 0 0;*/
+    font-family: var(--font_Famaly);
+    font-size: var(--font_Size_Header_lodo);
+}
+
+
+.BookBlock{
+    /*background-color: red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 190px;
+    min-height: 100px;
+    border-bottom: 1px solid rgba(69,69,69,0.5) ;
+
+    color: #34495e;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    line-height: 1.2;
+
+}
+.BookNum{
+    /*background-color: rebeccapurple;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+.BookImg{
+    display: flex;
+    justify-content: center;
+    /*background-color: aqua;*/
+    width: 150px;
+    transform: scale(0.7);
+}
+.BookImg img{
+    height: 100px;
+    filter: brightness(0.5);
+}
+.BookInfo{
+    /*background-color: beige;*/
+    width: 100%;
+    min-height: 100px;
+}
+.BookName{
+    /*font-size: 24px;*/
+}
+
+.BookDownload{
+    /*display: flex;*/
+    /*margin: 0 0 0 10px;*/
+    /*width: 80px;*/
+    /*height: 100%;*/
+
+    display: flex;
+    justify-content: flex-end;
+    width: 100px;
+    /*background-color: red;*/
+}
+.BookDownload img{
+    width: 25px;
+    margin: 0 10px;
+    cursor: pointer;
+    /*filter: opacity(0.5);*/
+    opacity: 0.5;
+    transition: 0.2s;
+}
+.BookDownload img:hover{
+    transition: 0.2s;
+    /*filter: opacity(1);*/
+    opacity: 1;
+    /*filter: hue-rotate(45deg);*/
+}
+
+.SearchMainOff{
+    display: none;
+}
+#headerInfo{
+    display: none;
+}
+
+@-webkit-keyframes autofill {
+    to {
+        color: inherit;
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}

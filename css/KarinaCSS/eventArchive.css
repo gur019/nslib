@@ -1,0 +1,136 @@
+body{
+    background-color: #eee;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*height: 100vh;*/
+}
+.MainBlock{
+    width: 960px;
+}
+#headerInfo{
+    display: none;
+}
+.InfoBlockSpan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-family: var(--font_Famaly);
+    font-size: var(--font_Size_Info_Block);
+    /*border-bottom: 1px solid var(--bg_header);*/
+}
+
+
+
+.InfoBlockSpanYear{
+    font-size: 30px;
+    font-weight: 900;
+    align-items: flex-start;
+}
+
+
+/*---------------------calendar--------------------*/
+
+.CalendarArchive{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*background-color: rebeccapurple;*/
+    background-image: url("https://raw.githubusercontent.com/JustMonk/codepen-resource-project/master/img/compressed-header.jpg");
+    /*background-image: url("/media/eventArchive/compressed-header1.jpg");*/
+    background-size: 100%;
+    background-position: center;
+    height: 220px;
+    font-family: var(--font_Famaly);
+    /*font-size: var(--font_Size_Info_Block);*/
+    /*font-weight: 900;*/
+}
+.CalendarArchiveHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*align-items: center;*/
+     height: 30%;
+    /*background-color: red;*/
+    color: #142638;
+    font-weight: 600;
+}
+.CalendarArchiveHeader h1{
+    font-weight: 600;
+    font-size: 55px;
+}
+.arrowBack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 10%;
+    height: 100%;
+    /*background-color: #1ba1a3;*/
+}
+.arrowBack img{
+    height: 20%;
+    transform: rotate(90deg);
+    opacity: .5;
+    padding: 0 20px;
+}
+.arrowNext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 10%;
+    height: 100%;
+    /*background-color: #2c3e50;*/
+}
+
+.arrowNext:hover img{
+    opacity: 1;
+}
+.arrowBack:hover img{
+    opacity: 1;
+}
+.arrowNext img{
+    height: 20%;
+    padding: 0 20px;
+    transform: rotate(270deg);
+    opacity: .5;
+}
+.MonthBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 30%;
+    height: 100%;
+    /*background-color: gold;*/
+}
+.Month{
+    width: 50px;
+    height: 50px;
+    /* background-color: #3a7453; */
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #142638;
+    font-weight: 600;
+}
+.Month:hover{
+    cursor: pointer;
+    background-color: rgba(20, 38, 56, .7);
+    color: #eeeeee;
+    box-shadow: 0 0 5px 5px rgba(238, 238, 238, .7);
+    /*border: 2px solid red;*/
+}
+.MonthActive{
+    background-color: rgba(20, 38, 56, .7);
+    color: #eeeeee;
+    box-shadow: 0 0 5px 5px rgba(238, 238, 238, .7);
+}

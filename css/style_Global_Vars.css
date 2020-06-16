@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+a{
+	text-decoration: none;
+}
+
+@font-face {
+	font-family: Gabriola; /* Имя шрифта */
+	src: url(/fonts/11053.ttf); /* Путь к файлу со шрифтом */
+}
+
+:root{
+
+	--bg_header: #478867;
+	/*--bg_header: linear-gradient(to bottom, #4981ad, #559fca);*/
+	--bg_button: #478867;
+
+	--font_Famaly: sans-serif;
+	--font_Size_Header_lodo: 12px;
+
+	--font_All_color: 85,85,85;
+
+	--font_Size_Info_Block: 24px;
+
+	--inputShadow: 0px 0px 10px rgb(71, 136, 103);
+}
+

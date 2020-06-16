@@ -1,0 +1,47 @@
+<div class = "PageNumBooks">
+    <@ if (currentPage == 1) { @>
+        <div class="arrowBack arrowDisabled"></div>
+        <div class="pageNum activePage">1</div>
+    <@ } else{@>
+        <div class="arrowBack prevButton"></div>
+        <div class="pageNum">1</div>
+    <@ } @>
+
+    <@ if (currentPage >= 5) { @>
+        <div class="ellipsis"> ... </div>
+    <@ } @>
+
+
+
+
+    <@ var i = currentPage - 2; @>
+    <@ while (i <= currentPage + 2) {@>
+
+        <@ if (i > 1 && i < lastPage) { @>
+            <@ if(i == currentPage){@>
+                <div class="pageNum activePage"><@=i@></div>
+            <@ } else{@>
+                <div class="pageNum"><@=i@></div>
+            <@ }@>
+        <@ } @>
+        <@ i=i+1; @>
+    <@ } @>
+
+
+
+
+    <@ if (lastPage >= 6 && lastPage - currentPage > 3) { @>
+        <div class="ellipsis"> ... </div>
+    <@ } @>
+
+    <@ if (lastPage == currentPage) { @>
+        <@ if (lastPage > 1) { @>
+            <div class="pageNum activePage"><@-lastPage@></div>
+        <@ } @>
+        <div class="arrowNext arrowDisabled"></div>
+
+    <@ } else { @>
+        <div class="pageNum"><@-lastPage@></div>
+        <div class="arrowNext nextButton"></div>
+    <@ } @>
+</div>

@@ -1,0 +1,70 @@
+<div class="BookBlock">
+    <div class="BookNum"><span><@-count@></span></div>
+    <div class="BookImg">
+        <div class="component">
+            <ul class="align">
+                <li>
+                    <figure class='book'>
+                        <!-- Front -->
+                        <ul class='hardcover_front'>
+                            <li>
+                                <div class="coverDesign yellow">
+                                    <span class="ribbon">NEW</span>
+                                    <img src="media/mainPage/header/logoBook.png" alt="">
+<!--                                    <%&#45;&#45;<h1>Скачать</h1>&#45;&#45;%>-->
+<!--                                    <%&#45;&#45;<p>TRANSFORM</p>&#45;&#45;%>-->
+                                </div>
+                            </li>
+                            <li></li>
+                        </ul>
+                        <!-- Pages -->
+                        <ul class='page'>
+                            <li></li>
+                            <li>
+                                <@ if(path){ @>
+
+                                    <a class="btn" href="#" onclick='simpleDownload("<@-searchData@>", "<@-docId@>")' >Скачать</a>
+                                <@ } @>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <!-- Back -->
+                        <ul class='hardcover_back'>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <ul class='book_spine'>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="BookInfo">
+        <div class="BookAuthor"><span><b>Автор:</b> <@-author@></span></div>
+        <div class="BookName"><span><b>Название:</b> <@-name@></span></div>
+        <div class="BookPublisher"><span><b>Издатель:</b> <@-publisher@></span></div>
+        <div class="BookData"><span><b>Год издания:</b> <@-year@></span></div>
+        <div class="BookISBN"><span><b>ISBN:</b> <@-ISBN@></span></div>
+        <div class="BookVolume"><span><b>Объем:</b> <@-size@></span></div>
+        <div class="BookLanguage"><span><b>Язык:</b> <@-language@></span></div>
+    </div>
+    <div class="BookDownload">
+        <@ if(path){ @>
+            <@ if(typeFile == "pdf"){ @>
+                <img src="media/searchBooks/glaz_Green.png" alt=""
+                     onclick='simpleViewForPdf("<@-searchData@>", "<@-docId@>")'>
+            <@ } @>
+
+<!--            <img src="media/searchBooks/download_Green.png" alt=""-->
+<!--                 onclick='simpleDownload("<@-searchData@>", "<@-docId@>")'>-->
+
+
+
+        <@ } @>
+    </div>
+</div>

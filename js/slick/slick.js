@@ -1687,10 +1687,10 @@
     Slick.prototype.postSlide = function(index) {
 
         var _ = this;
-        //--------------------
-        // if (_.options.description)
-        //     changeDescription(index);
-        //--------------------
+        // --------------------
+        if (_.options.description)
+            changeDescription(index);
+        // --------------------
         if( !_.unslicked ) {
 
             _.$slider.trigger('afterChange', [_, index]);

@@ -58,16 +58,6 @@ header{
 	margin: 0 0 0 40px;
 }
 
-.hMenuA{
-	/*margin: 0 10px;*/
-	font-family: var(--font_Famaly);
-	font-size: 15px;
-	color: #eee;
-}
-.hMenuA:hover{
-	filter: drop-shadow(2px 4px 6px black);
-}
-
 #headerInfo{
 	/*width: 960px;*/
 	height: fit-content;
@@ -111,16 +101,20 @@ header{
 	filter: drop-shadow(2px 4px 6px black);
 }
 
+.slickSliderBlockBefore{
+	text-decoration: none !important;
+}
+.slickSliderBlockBefore p{
+	margin: 0 !important;
+	padding: 0.5rem !important;
+	font-size: 15px;
+}
+.slickSliderBlockBefore:hover{
+	text-decoration: none !important;
+}
 
 /*-----------SLICK---------------*/
-.slickSliderBlock p{
-	padding: 0 0 0 20px;
-	font-family: var(--font_Famaly);
-	font-size: 14px;
-	line-height: 20px;
-	/*color: #142638;*/
-	color: #eeeeee;
-}
+
 .slickSliderBlock a{
 	display: flex;
 	justify-content: center;

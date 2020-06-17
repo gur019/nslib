@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="/css/KarinaCSS/eventArchive.css">
     <link rel="stylesheet" href="/css/photoGallery/style_photo_gallery.css">
+    <link rel="stylesheet" href="/css/archive/year.css">
 
     <script src="/js/eventArchive/calendar.js" type="text/javascript"></script>
 
@@ -34,204 +35,158 @@
                 <span style="color: #142638;">Культурно-досуговая деятельность библиотеки (архив)</span>
             </div>
 
-            <div class="CalendarArchive">
-                <div class="arrowBack"><img src="/media/searchBooks/nextPage/arrow2.png" alt="" onclick="arrowYearChange(-1)"></div>
-                <div class="CalendarArchiveHeader"><h1>2020</h1><p>Март</p></div>
-                <div class="MonthBlock">
-                    <div id = "month_0" class="Month"><p>янв</p></div>
-                    <div id = "month_1" class="Month"><p>фев</p></div>
-                    <div id = "month_2" class="Month"><p>мар</p></div>
-                    <div id = "month_3" class="Month"><p>апр</p></div>
-                    <div id = "month_4" class="Month"><p>май</p></div>
-                    <div id = "month_5" class="Month"><p>июн</p></div>
-                    <div id = "month_6" class="Month"><p>июл</p></div>
-                    <div id = "month_7" class="Month"><p>авг</p></div>
-                    <div id = "month_8" class="Month"><p>сен</p></div>
-                    <div id = "month_9" class="Month"><p>окт</p></div>
-                    <div id = "month_10" class="Month"><p>ноя</p></div>
-                    <div id = "month_11" class="Month"><p>дек</p></div>
-                </div>
-                <div class="arrowNext"><img src="/media/searchBooks/nextPage/arrow2.png" alt="" onclick="arrowYearChange(1)"></div>
-            </div>
+            <?php include '../calendar.html';?>
 
-           <!-- <div class="InfoBlockSpan InfoBlockSpanYear">
-               <span style="color: #142638;">2020</span>
-           </div> -->
+           
+           <p style="dysplay:none;">2020</p>
+
             <div class="InfoBlockSpan InfoBlockSpanYear">
                 <span style="color: #142638; font-size: 20px;">Декабрь</span>
             </div>
-            <div class="GalleryBlockPhoto">
-                <div class="GalleryPhoto GalleryPhotoMargin">
-                    <figure class="GalleryFigure">
-                        <div class="GalleryFigureDiv">
-                            <img src="/media/mainPage/gallery/g1.jpg" alt="">
-                        </div>
-                        <figcaption class="GalleryFigcaption">
-                            <span>19.05.2020</span>
-                            <h2>Поэтический вечер "Чай клуб"</h2>
-                            <p>Тут типа будет описание</p>
-                            <a href="events/19_05_2020_teaСlub.php">Подробнее</a>
-                        </figcaption>
-                    </figure>
+
+            <div class="row mt-5 d-flex justify-content-center flex-wrap MMobile">
+
+                <div class="col-sm d-flex justify-content-center m3 p-0 BGI ">
+                <figure class="figureArchive">
+                    <img src="../../../media/mainPage/gallery/g1.jpg">
+                    <figcaption>
+                        <h4>Поэтический вечер "Чай клуб"</h4>
+                        <p>Проект под таким названием был реализован в Национальной научной библиотеке несколько лет назад и завоевал заслуженную популярность.</p>
+                        <p class="centre"><a href="events/19_05_2020_teaСlub.php">подробнее ></a></p>
+                    </figcaption>
+                </figure>
                 </div>
-                <div class="GalleryPhoto GalleryPhotoMargin">
-                    <figure class="GalleryFigure">
-                        <div class="GalleryFigureDiv">
-                            <img src="/media/mainPage/gallery/g2.jpg" alt="">
-                        </div>
-                        <figcaption class="GalleryFigcaption">
-                            <span>19.05.2020</span>
-                            <h2>Заголовок</h2>
-                            <p>Тут типа будет описание</p>
-                            <a href="">Подробнее</a>
-                        </figcaption>
-                    </figure>
+
+                <div class="col-sm d-flex justify-content-center m3 p-0 BGI P2">
+                <figure class="figureArchive">
+                    <img src="../../../media/mainPage/gallery/g2.jpg">
+                    <figcaption>
+                        <h4>Кинотеатр К2</h4>
+                        <p>Антикинотеатр на диванах</p>
+                        <p class="centre"><a href="project-K2.php">подробнее ></a></p>
+                    </figcaption>
+                </figure>
                 </div>
-                <div class="GalleryPhoto GalleryPhotoMargin">
-                    <figure class="GalleryFigure">
-                        <div class="GalleryFigureDiv">
-                            <img src="/media/mainPage/gallery/g3.jpg" alt="">
-                        </div>
-                        <figcaption class="GalleryFigcaption">
-                            <span>19.05.2020</span>
-                            <h2>Заголовок</h2>
-                            <p>Тут типа будет описание</p>
-                            <a href="">Подробнее</a>
-                        </figcaption>
-                    </figure>
+
+                <div class="col-sm d-flex justify-content-center m3 p-0 BGI P3">
+                <figure class="figureArchive">
+                    <img src="../../../media/mainPage/gallery/g3.jpg">
+                    <figcaption>
+                        <h4>Unreal Engine 4</h4>
+                        <p>Видео и анимация</p>
+                        <p class="centre"><a href="project-RRUE4.php">подробнее ></a></p>
+                    </figcaption>
+                </figure>
                 </div>
+
+                <div class="col-sm d-flex justify-content-center m3 p-0 BGI P4">
+                <figure class="figureArchive">
+                    <img src="../../../media/mainPage/gallery/g4.jpg">
+                    <figcaption>
+                        <h4>Опера "Евгений Онегин"</h4>
+                        <p>Живые декорации</p>
+                        <p class="centre"><a href="project-Eugene_Onegin.php">подробнее ></a></p>
+                    </figcaption>
+                </figure>
+                </div>
+
+                <div class="col-sm d-flex justify-content-center m3 p-0 BGI P7 ">
+                <figure class="figureArchive">
+                    <img src="../../../media/mainPage/gallery/g5.jpg">
+                    <figcaption>
+                        <h4>Knock in Doors</h4>
+                        <p>Мобильная игра</p>
+                        <p class="centre"><a href="project-Knock_in_Doors.php">подробнее ></a></p>
+                    </figcaption>
+                </figure>
+                </div>
+
+                <div class="col-sm d-flex justify-content-center m3 p-0 BGI P6 ">
+                <figure class="figureArchive">
+                    <img src="../../../media/mainPage/gallery/g6.jpg">
+                    <figcaption>
+                        <h4>Интерактивная комната</h4>
+                        <p>Интерактивные инсталляции</p>
+                        <p class="centre"><a href="project-Vid3ion.php">подробнее ></a></p>
+                    </figcaption>
+                </figure>
+                </div>
+            <!-- remove -->
             </div>
 
+                        
             <div style="height: 40px;" class="InfoBlockSpan InfoBlockSpanYear">
                 <span style="color: #142638; font-size: 20px;">Ноябрь</span>
             </div>
 
-            <div class="GalleryBlockPhoto">
-                <div class="GalleryPhoto GalleryPhotoMargin">
-                    <figure class="GalleryFigure">
-                        <div class="GalleryFigureDiv">
-                            <img src="/media/mainPage/gallery/g4.jpg" alt="">
-                        </div>
-                        <figcaption class="GalleryFigcaption">
-                            <span>19.05.2020</span>
-                            <h2>Заголовок</h2>
-                            <p>Тут типа будет описание</p>
-                            <a href="">Подробнее</a>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="GalleryPhoto GalleryPhotoMargin">
-                    <figure class="GalleryFigure">
-                        <div class="GalleryFigureDiv">
-                            <img src="/media/mainPage/gallery/g5.jpg" alt="">
-                        </div>
-                        <figcaption class="GalleryFigcaption">
-                            <span>19.05.2020</span>
-                            <h2>Заголовок</h2>
-                            <p>Тут типа будет описание</p>
-                            <a href="">Подробнее</a>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="GalleryPhoto GalleryPhotoMargin">
-                    <figure class="GalleryFigure">
-                        <div class="GalleryFigureDiv">
-                            <img src="/media/mainPage/gallery/g6.jpg" alt="">
-                        </div>
-                        <figcaption class="GalleryFigcaption">
-                            <span>19.05.2020</span>
-                            <h2>Заголовок</h2>
-                            <p>Тут типа будет описание</p>
-                            <a href="">Подробнее</a>
-                        </figcaption>
-                    </figure>
+            <div class="row mt-5 d-flex justify-content-center flex-wrap MMobile">
+
+                <div class="col-sm d-flex justify-content-center m3 p-0 BGI ">
+                <figure class="figureArchive">
+                    <img src="../../../media/mainPage/gallery/g1.jpg">
+                    <figcaption>
+                        <h4>Поэтический вечер "Чай клуб"</h4>
+                        <p>Проект под таким названием был реализован в Национальной научной библиотеке несколько лет назад и завоевал заслуженную популярность.</p>
+                        <p class="centre"><a href="events/19_05_2020_teaСlub.php">подробнее ></a></p>
+                    </figcaption>
+                </figure>
                 </div>
 
-                <div class="GalleryPhoto GalleryPhotoMargin">
-                    <figure class="GalleryFigure">
-                        <div class="GalleryFigureDiv">
-                            <img src="/media/mainPage/gallery/g6.jpg" alt="">
-                        </div>
-                        <figcaption class="GalleryFigcaption">
-                            <span>19.05.2020</span>
-                            <h2>Заголовок</h2>
-                            <p>Тут типа будет описание</p>
-                            <a href="">Подробнее</a>
-                        </figcaption>
-                    </figure>
+                <div class="col-sm d-flex justify-content-center m3 p-0 BGI P2">
+                <figure class="figureArchive">
+                    <img src="../../../media/mainPage/gallery/g2.jpg">
+                    <figcaption>
+                        <h4>Кинотеатр К2</h4>
+                        <p>Антикинотеатр на диванах</p>
+                        <p class="centre"><a href="project-K2.php">подробнее ></a></p>
+                    </figcaption>
+                </figure>
                 </div>
-                <div class="GalleryPhoto GalleryPhotoMargin">
-                    <figure class="GalleryFigure">
-                        <div class="GalleryFigureDiv">
-                            <img src="/media/mainPage/gallery/g6.jpg" alt="">
-                        </div>
-                        <figcaption class="GalleryFigcaption">
-                            <span>19.05.2020</span>
-                            <h2>Заголовок</h2>
-                            <p>Тут типа будет описание</p>
-                            <a href="">Подробнее</a>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
 
+                <div class="col-sm d-flex justify-content-center m3 p-0 BGI P3">
+                <figure class="figureArchive">
+                    <img src="../../../media/mainPage/gallery/g3.jpg">
+                    <figcaption>
+                        <h4>Unreal Engine 4</h4>
+                        <p>Видео и анимация</p>
+                        <p class="centre"><a href="project-RRUE4.php">подробнее ></a></p>
+                    </figcaption>
+                </figure>
+                </div>
 
-            <div class="InfoBlockSpan InfoBlockSpanYear">
-                <span style="color: #142638;">2019</span>
-            </div>
-            <div class="GalleryBlockPhoto">
-                <div class="GalleryPhoto GalleryPhotoMargin">
-                    <figure class="GalleryFigure">
-                        <div class="GalleryFigureDiv">
-                            <img src="/media/mainPage/gallery/g6.jpg" alt="">
-                        </div>
-                        <figcaption class="GalleryFigcaption">
-                            <span>19.05.2020</span>
-                            <h2>Заголовок</h2>
-                            <p>Тут типа будет описание</p>
-                            <a href="">Подробнее</a>
-                        </figcaption>
-                    </figure>
+                <div class="col-sm d-flex justify-content-center m3 p-0 BGI P4">
+                <figure class="figureArchive">
+                    <img src="../../../media/mainPage/gallery/g4.jpg">
+                    <figcaption>
+                        <h4>Опера "Евгений Онегин"</h4>
+                        <p>Живые декорации</p>
+                        <p class="centre"><a href="project-Eugene_Onegin.php">подробнее ></a></p>
+                    </figcaption>
+                </figure>
                 </div>
-                <div class="GalleryPhoto GalleryPhotoMargin">
-                    <figure class="GalleryFigure">
-                        <div class="GalleryFigureDiv">
-                            <img src="/media/mainPage/gallery/g6.jpg" alt="">
-                        </div>
-                        <figcaption class="GalleryFigcaption">
-                            <span>19.05.2020</span>
-                            <h2>Заголовок</h2>
-                            <p>Тут типа будет описание</p>
-                            <a href="">Подробнее</a>
-                        </figcaption>
-                    </figure>
+
+                <div class="col-sm d-flex justify-content-center m3 p-0 BGI P7 ">
+                <figure class="figureArchive">
+                    <img src="../../../media/mainPage/gallery/g5.jpg">
+                    <figcaption>
+                        <h4>Knock in Doors</h4>
+                        <p>Мобильная игра</p>
+                        <p class="centre"><a href="project-Knock_in_Doors.php">подробнее ></a></p>
+                    </figcaption>
+                </figure>
                 </div>
-                <div class="GalleryPhoto GalleryPhotoMargin">
-                    <figure class="GalleryFigure">
-                        <div class="GalleryFigureDiv">
-                            <img src="/media/mainPage/gallery/g6.jpg" alt="">
-                        </div>
-                        <figcaption class="GalleryFigcaption">
-                            <span>19.05.2020</span>
-                            <h2>Заголовок</h2>
-                            <p>Тут типа будет описание</p>
-                            <a href="">Подробнее</a>
-                        </figcaption>
-                    </figure>
+
+                <div class="col-sm d-flex justify-content-center m3 p-0 BGI P6 ">
+                <figure class="figureArchive">
+                    <img src="../../../media/mainPage/gallery/g6.jpg">
+                    <figcaption>
+                        <h4>Интерактивная комната</h4>
+                        <p>Интерактивные инсталляции</p>
+                        <p class="centre"><a href="project-Vid3ion.php">подробнее ></a></p>
+                    </figcaption>
+                </figure>
                 </div>
-                <div class="GalleryPhoto GalleryPhotoMargin">
-                    <figure class="GalleryFigure">
-                        <div class="GalleryFigureDiv">
-                            <img src="/media/mainPage/gallery/g6.jpg" alt="">
-                        </div>
-                        <figcaption class="GalleryFigcaption">
-                            <span>19.05.2020</span>
-                            <h2>Заголовок</h2>
-                            <p>Тут типа будет описание</p>
-                            <a href="">Подробнее</a>
-                        </figcaption>
-                    </figure>
-                </div>
+                <!-- remove -->
             </div>
 
         </div>

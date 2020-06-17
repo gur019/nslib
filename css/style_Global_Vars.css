@@ -7,6 +7,17 @@
 a{
 	text-decoration: none;
 }
+.link{
+	font-family: var(--font_Famaly);
+	font-size: 15px;
+	color: #eee;
+	/* color: red !important; */
+	transition-duration: 0.2s;
+	text-decoration: none !important;
+}
+.link:hover{
+	color: #112f50 !important;
+}
 
 @font-face {
 	font-family: Gabriola; /* Имя шрифта */

@@ -1,0 +1,106 @@
+.BGI{
+    min-width: 300px;
+    height: 300px;
+}
+.Bcolor{
+    background-color: var(--bg_header) !important;
+    border-radius: 0px !important;
+    border: 0 solid transparent !important;
+    width: 180px !important;
+    font-size: 1rem !important;
+    font-weight: 100 !important;
+}
+.m3{
+    margin: 1rem !important;
+}
+
+.figureArchive {
+    position: relative;
+    overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    font-weight: normal;
+    display: inline-block;
+    border-radius: var(--border-radius);
+    margin: 0 !important;
+
+    height: 100%;
+    width: 100%;
+}
+.figureArchive img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+figcaption {
+    position: absolute;
+    background: rgba(0,0,0,.9);
+    padding: 0.5rem 1rem 1rem 1rem;
+    text-align: left;
+    font-size: .9rem;
+    opacity: 1;
+    bottom: 0;
+    width: 100%;
+    min-height: 200px;
+    transform: translateY(140px);
+    -webkit-transform: translateY(140px);
+    -moz-transform: translateY(140px);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease; 
+            -o-transition: all .3s ease;
+}
+figcaption h4,p{
+    text-align: center;
+    color: #eee;
+}
+figcaption h4{
+    font-size: 1rem;
+}
+figcaption a{
+    color: var(--color) !important;
+}
+figcaption p{
+    opacity: 0;
+    transition: all .3s ease;
+    text-align: left;
+}
+.figureArchive:hover figcaption{
+    opacity: 1;
+    transform: translateY(0);
+}
+.figureArchive:hover p{
+    opacity: 1;
+}
+.centre{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 94%;
+}
+.mt-5{
+    margin-top: 0 !important;
+}
+
+
+@media (max-width: 576px) {
+    .BGI{
+    min-width: 250px;
+    height: 320px;
+    }
+    .MMobile{
+    margin: 0 !important;
+    }
+    .w-100{
+    text-align: center;
+    }
+    figcaption h4{
+    font-size: 1.3rem;
+    }
+}
+@media (max-width: 376px) {
+
+    figcaption h4{
+    font-size: 1.2rem;
+    }
+}

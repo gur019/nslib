@@ -20,8 +20,10 @@
 
     <link rel="stylesheet" href="css/bookAnim/bookAnimTopMain.css">
 
-    <link rel="stylesheet" href="css/photoGallery/style_photo_gallery.css">
+    <link rel="stylesheet" href="css/archivePage/archivePage.css">
     <link rel="stylesheet" href="css/ToDay/style_ToDay.css">
+    <link rel="stylesheet" href="css/calendarPage/calendarPage.css">
+    <link rel="stylesheet" href="css/journal/journal.css">
 
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
@@ -62,33 +64,10 @@
         
         <?php include 'templates/includes/toDay.html';?>
         
-
-        <div class="InfoBlockSpan">
-            <span style="color: #142638;">Календарь памятных дат "Осетия - 2020"</span>
-        </div>
-        <div class="Calendar">
-            <div class="CalendarLeft"><iframe width="100%" height="300px" src="https://www.youtube.com/embed/8jA_SVEEMgk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="CalendarRight">
-                <span>23 января 1786 года родился Огюст де Монферран.
-Сегодня исполняется 90 лет со дня рождения выдающегося поэта, нобелевского лауреата Дерека Уолкотта.
-23 января 1928 года родилась великая французская актриса, легенда мирового кинематографа Жанна Моро.</span>
-                <div class="GalleryLink">
-                    <a href="">Посмотреть все</a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="InfoBlockSpan InfoBlockSpanJournal">
-            <span>Журнал "Записки на манжетах"</span>
-        </div>
-        <div class="Journal">
-            <img src="media/mainPage/Journal/2.png" alt="">
-            <span>Мы предлагаем тебе новый формат общения. Почему новый? Об этом ты скоро узнаешь…</span>
-            <div class="GalleryLink GalleryLinkJournal">
-                <a href="http://nslib.tmweb.ru/zap/index.html" target="_blank">Читать дальше</a>
-            </div>
-        </div>
+        <?php include 'templates/includes/calendarPage.html';?>
+        
+        <?php include 'templates/includes/journal.html';?>
+        
 
         <div class="InfoBlockSpan">
             <span style="color: #142638;">Контакты</span>

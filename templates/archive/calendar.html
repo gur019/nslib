@@ -1,6 +1,6 @@
 <div class="CalendarArchive">
     <div class="arrowBack"><img src="/media/searchBooks/nextPage/arrow2.png" alt="" onclick="arrowYearChange(-1)"></div>
-    <div class="CalendarArchiveHeader"><h1>2020</h1><p>Март</p></div>
+    <div class="CalendarArchiveHeader"><h1 onclick="showAllYear()">2020</h1></div>
     <div class="MonthBlock">
         <div id = "month_0" class="Month"><p>янв</p></div>
         <div id = "month_1" class="Month"><p>фев</p></div>
@@ -17,3 +17,8 @@
     </div>
     <div class="arrowNext"><img src="/media/searchBooks/nextPage/arrow2.png" alt="" onclick="arrowYearChange(1)"></div>
 </div>
+<script>
+    var startYear = 2019;
+    var endYear = 2020;
+</script>
+<h1 id="messageNotFound" style = "display:none;">В этом месяце не было мероприятий</h1>

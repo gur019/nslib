@@ -90,7 +90,12 @@ header{
 	justify-content: space-between;
 	/* width: 960px; */
 	height: 40px;
-	border-top: 1px solid #eee;
+	/* border-top: 1px solid #eee; */
+}
+.divButTop{
+	height: 1px !important;
+	background-color: #eee !important;
+	background-clip: content-box;
 }
 
 .headerIconLink{
@@ -121,3 +126,6 @@ header{
 	align-items: center;
 	height: 300px;
 }
+
+
+/* -----------Bootstrap-------------- */

@@ -75,6 +75,7 @@ function monthButtonsStateNormal(){
 
 function showAllYear(){
     document.getElementById("messageNotFound").style.display = "none";
+    monthButtonsStateNormal()
     for (let i = 0; i<12; i++){
         if (monthBlocks[i] != null){
             monthBlocks[i].style.display = "block";

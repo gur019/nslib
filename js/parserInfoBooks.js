@@ -15,7 +15,7 @@ var searchYear;
 
 var fromMainSearch = false;
 var searchStr = "";
-
+var customHost = "192.168.1.70:8080";
 document.addEventListener("DOMContentLoaded", function() {
     //alert(strTest);
     _.templateSettings = {
@@ -27,11 +27,25 @@ document.addEventListener("DOMContentLoaded", function() {
     //getBooksFromServer();
     tmp2 = _.template(document.getElementById('switchPages').innerHTML);
 
-
-    if (fromMainSearch || basicSearch) {
-        getBooksFromServer();
-    }
+    // console.log(fromMainSearch);
+    // console.log(basicSearch);
+    // if (fromMainSearch || basicSearch) {
+    //     getBooksFromServer();
+    // }
+     
     //parser(strTest);
+    
+    var url = window.location.href;
+    
+    var myParam = location.search.split('searchString=');
+    if (myParam.length > 1){
+        if (myParam[1]){
+            fromMainSearch = true;
+            searchStr = decodeURIComponent(myParam[1]);
+            getBooksFromServer();
+            // console.log();
+        }
+    }
 });
 
 function parser(strToParser){
@@ -185,7 +199,7 @@ function getBooksFromServer(){
             headers: {
                 'Accept': 'application/json'
             },
-            url: window.location.protocol + "//" + window.location.host + "/search?"+csrfParameter+"="+csrfToken,
+            url: window.location.protocol + "//" + "192.168.1.70:8080" + "/search?",
             enctype: "multipart/form-data",
             method: 'POST',
             type: 'POST',

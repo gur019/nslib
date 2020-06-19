@@ -81,7 +81,7 @@ main{
 	display: none;
 }
 
-@-webkit-keyframes autofill {
+/* @-webkit-keyframes autofill {
 	to {
 		color: inherit;
 		background: transparent;
@@ -91,7 +91,7 @@ main{
 input:-webkit-autofill {
 	-webkit-animation-name: autofill;
 	-webkit-animation-fill-mode: both;
-}
+} */
 
 /* ---------------------------------mobile------------------------------------------------------ */
 

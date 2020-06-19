@@ -83,24 +83,39 @@ figcaption p{
 }
 
 
+
+/* ---------------------------------mobile------------------------------------------------------ */
+
+
+/* Малые девайсы («ландшафтные телефоны», >= 576px) */
 @media (max-width: 576px) {
     .BGI{
-    min-width: 250px;
-    height: 320px;
-    }
-    .MMobile{
-    margin: 0 !important;
-    }
-    .w-100{
-    text-align: center;
-    }
-    figcaption h4{
-    font-size: 1.3rem;
-    }
+        min-width: 250px;
+        height: 320px;
+        }
+        .MMobile{
+        margin: 0 !important;
+        }
+        .w-100{
+        text-align: center;
+        }
+        figcaption h4{
+        font-size: 1.3rem;
+        }
 }
-@media (max-width: 376px) {
 
-    figcaption h4{
-    font-size: 1.2rem;
-    }
-}
+/* Средние девайсы («таблетки», >= 768px) */
+/* @media (max-width: 768px)  {
+
+} */
+
+/* Большие девайсы (десктопы, >= 992px) */
+/* @media (max-width: 992px) {
+
+
+} */
+
+/* Экстрабольшие девайсы (большие десктопы, >= 1200px) */
+/* @media (max-width: 1200px) {
+
+} */

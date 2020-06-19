@@ -10,7 +10,7 @@ a{
 .link{
 	font-family: var(--font_Famaly);
 	font-size: 15px;
-	color: #eee;
+	color: #fff;
 	/* color: red !important; */
 	transition-duration: 0.2s;
 	text-decoration: none !important;
@@ -31,7 +31,7 @@ a{
 	--bg_button: #478867;
 
 	--font_Famaly: sans-serif;
-	--font_Size_Header_lodo: 12px;
+	--font_Size_Header_lodo: 16px;
 
 	--font_All_color: 85,85,85;
 

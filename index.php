@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="css/style_Global_Vars.css">
     <link rel="stylesheet" href="css/style_index.css">
-    <link rel="stylesheet" href="css/sliderPosters.css">
+    <link rel="stylesheet" href="css/sliderPosters.css?<?=filemtime('css/sliderPosters.css')?>">
     <link rel="stylesheet" href="css/style_Header.css">
 
     <!-- ----------------bootstrap-------------------- -->
@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
 
+    <link rel="stylesheet" href="css/input_search_mainPage/input_search_mainPage.css">
     <link rel="stylesheet" href="css/bookAnim/bookAnimTopMain.css">
 
     <link rel="stylesheet" href="css/archivePage/archivePage.css">
@@ -50,13 +51,8 @@
     </header>
 
     <div class="MainBlock container">
-
-        <div class="InfoBlockSpan InfoBlockSpanSearch">
-            <span style="color: #142638;">Электронная библиотека</span>
-        </div>
-        <div class="SearchBlock">
-          <?php include 'templates/includes/input_search_mainPage.html';?>
-        </div>
+        
+        <?php include 'templates/includes/input_search_mainPage.html';?>
 
         <?php include 'templates/includes/posters.html';?>
 

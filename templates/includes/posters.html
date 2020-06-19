@@ -25,7 +25,7 @@
         <div class="templatePosterDate Disabled">14</div>
         <div class="templatePosterDateText Disabled">июня</div>
         <div class="templatePosterDescriptionHeader Disabled">Вечер Вечерной</div>
-        <div class="templatePosterDescriptionFooter Disabled">Очень интересный вечер</div>
+        <div class="templatePosterDescriptionFooter Disabled">Очень интересный вечер Очень интересный вечерОчень интересный вечерОчень интересный вечерОчень интересный вечерОчень интересный вечер</div>
         <div class="templatePosterDescriptionFooterDepartment Disabled">Общий читальный зал</div>
         <div class="templatePosterDateTime Disabled">18:30</div>
 
@@ -52,7 +52,7 @@
     </div>   
 
     
-    <div class="PostersInfo">
+    <div class="PostersInfo mobileDesabled">
         <div  class="PostersInfoBlock">
             <div class="PostersInfoDate"><span id="1_Date" class="PostersInfoDateDate PostersInfoDateDateWidth"></span>
                 <span id="2_Text" class="PostersInfoDateText"></span>
@@ -65,6 +65,29 @@
             <div class="PostersInfoTime">
                 <span id="6_DateTime" class="PostersInfoDateDate PostersInfoDateTimeWidth"></span>
             </div>
+        </div>
+    </div>
+
+
+    <div class="PostersInfo mobileEnable">
+        <div  class="PostersInfoBlock">
+           
+            <div class="PostersInfoDescription">
+                <span id="3_Description2" class="PostersInfoDescriptionHeader"></span>
+                <span id="4_DescriptionFooter2" class="PostersInfoDescriptionFooter"></span>
+                <span id="5_DescriptionFooterDepartment2" class="PostersInfoDescriptionFooterDepartment"></span>
+            </div>
+
+            <div class="mobileDate">
+                <div class="PostersInfoDate2"><span id="1_Date2" class="PostersInfoDateDate PostersInfoDateDateWidth"></span>
+                    <span id="2_Text2" class="PostersInfoDateText"></span>
+                </div>
+                <div class="PostersInfoTime">
+                    <span id="6_DateTime2" class="PostersInfoDateDate PostersInfoDateTimeWidth"></span>
+                </div>
+            </div>
+
+            
         </div>
     </div>
 
@@ -81,4 +104,24 @@
             isWindowClickClosing: true,
             isEscClosing: true
   });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    posterInfoResize();
+    window.addEventListener('resize', function(event){
+        posterInfoResize();
+    });
+  });
+
+  function posterInfoResize(){
+    if (window.matchMedia("(max-width: 992px)").matches) {
+        document.getElementsByClassName("mobileDesabled")[0].style.display="none";
+        document.getElementsByClassName("mobileEnable")[0].style.display="flex";
+    } else {
+        document.getElementsByClassName("mobileDesabled")[0].style.display="flex";
+        document.getElementsByClassName("mobileEnable")[0].style.display="none";
+    }
+  }
+
+
+ 
   </script>

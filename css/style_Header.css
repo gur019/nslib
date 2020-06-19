@@ -36,7 +36,7 @@ header{
 	/*line-height: 90%;*/
 	/*text-align: center;*/
 	cursor: pointer;
-	color: #eee;
+	color: #fff;
 	text-shadow: 0 0 4px rgba(0,0,0,.5);
 }
 #spacing{
@@ -48,7 +48,7 @@ header{
 	justify-content: flex-end;
 	align-items: center;
 	/*background-color: aqua;*/
-	width: 50%;
+	/* width: 50%; */
 	height: 100%;
 }
 .menuBG{
@@ -85,17 +85,15 @@ header{
 
 
 .headerLink{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	/* width: 960px; */
-	height: 40px;
-	/* border-top: 1px solid #eee; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px
 }
 .divButTop{
 	height: 1px !important;
 	background-color: #eee !important;
-	background-clip: content-box;
+	/* background-clip: content-box; */
 }
 
 .headerIconLink{
@@ -113,19 +111,144 @@ header{
 	margin: 0 !important;
 	padding: 0.5rem !important;
 	font-size: 15px;
+	text-align: left;
+	color: #fff;
 }
 .slickSliderBlockBefore:hover{
 	text-decoration: none !important;
 }
+.hFit{
+	height: fit-content;
+}
+.disabledLine{
+	display: none;
+}
 
-/*-----------SLICK---------------*/
-
+/*------------------------SLICK-------------------------*/
 .slickSliderBlock a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 300px;
+	/* height: 300px; */
+	margin: 15px 0;
 }
 
 
-/* -----------Bootstrap-------------- */
+
+
+/* ------------------bootstrap_hamburger---------------- */
+.icon-bar {
+	width: 22px; 
+	height: 2px;
+	background-color: #eee;
+	display: block;
+	transition: all 0.2s;
+	margin-top: 4px
+}
+ 
+.navbar-toggler:active,.navbar-toggler:focus {
+	outline: 0;
+}
+.navbar-toggler {
+  border: none !important;
+  background: transparent !important;
+  padding: initial;
+}
+.navbar-toggler .top-bar {
+	transform: rotate(45deg);
+	transform-origin: 10% 10%;
+  }
+   
+  .navbar-toggler .middle-bar {
+	opacity: 0;
+  }
+   
+  .navbar-toggler .bottom-bar {
+	transform: rotate(-45deg);
+	transform-origin: 10% 90%;
+  }
+   
+  .navbar-toggler.collapsed .top-bar {
+	transform: rotate(0);
+  }
+   
+  .navbar-toggler.collapsed .middle-bar {
+	opacity: 1;
+  }
+   
+  .navbar-toggler.collapsed .bottom-bar {
+	transform: rotate(0);
+  }
+
+/* --------------------------------------------------------------------------------------------- */
+/* ---------------------------------mobile------------------------------------------------------ */
+
+
+/* Малые девайсы («ландшафтные телефоны», >= 576px) */
+@media (max-width: 576px) {
+
+}
+
+/* Средние девайсы («таблетки», >= 768px) */
+@media (max-width: 768px)  {
+	.removeLink{
+		position: absolute;
+    	top: 9999999;
+	}
+}
+
+/* Большие девайсы (десктопы, >= 992px) */
+@media (max-width: 992px) {
+	.headerLink{
+		flex-wrap: wrap !important;
+		height: auto !important;
+		padding: 0;
+	}
+	.link{
+		width: inherit;
+		margin: 10px 0 0 0;
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.slick-slide-resize img{
+		width: 100% !important;
+    	height: auto;
+	}
+	.slickSliderBlock a{
+		height: auto;
+		flex-direction: column;
+	}
+	.slick-arrow{
+		display: none !important;
+	}
+	.slickSliderBlockBefore p{
+		font-size: 16px;
+		padding: 0.5rem 0 0.5rem 0 !important;
+	}
+	.hLogoFont{
+		font-size: 18px !important;
+	}
+	.WH{
+		width: 50px;
+		height: 50px;
+		padding: 0 !important;
+	}
+	.MLA{
+		margin-left: auto;
+	}
+	.slick-slide{
+		margin: 0;
+	}
+	.disabledLine{
+		display: block;
+		background-clip: content-box;
+	}
+	
+
+}
+
+/* Экстрабольшие девайсы (большие десктопы, >= 1200px) */
+/* @media (max-width: 1200px) {
+
+} */

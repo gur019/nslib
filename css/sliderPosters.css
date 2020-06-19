@@ -9,10 +9,7 @@
     background: var(--bg_header);
 }
 
-.slick-track{
-    /*height: 480px;*/
-    /*background-color: red;*/
-}
+
 .PostersInfo{
     display: -webkit-box;
     display: -moz-box;
@@ -168,3 +165,74 @@
     -khtml-user-select: none;
     user-select: none;
 }
+
+/* ---------------------------------mobile------------------------------------------------------ */
+
+
+/* Малые девайсы («ландшафтные телефоны», >= 576px) */
+/* @media (max-width: 576px) {
+
+} */
+
+/* Средние девайсы («таблетки», >= 768px) */
+/* @media (max-width: 768px)  {
+
+} */
+
+/* Большие девайсы (десктопы, >= 992px) */
+@media (max-width: 992px) {
+    .slick-slide img{
+        margin: 0 15px !important;
+    }
+    .PosterBlock{
+        height: auto !important;
+    }
+    .PostersInfo{
+        height: auto;
+    }
+    .PostersInfoBlock{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .mobileDate{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px 0 0 0;
+    }
+    .PostersInfoDate2{
+        display: flex;
+        /* background-color: red; */
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    .PostersInfoDateDate{
+        font-size: 32px;  
+    }
+    .PostersInfoDateText{
+        font-size: 24px;
+        width: 60px;
+    }
+    .PostersInfoTime{
+        width: 50%;
+    }
+    .PostersInfoDescriptionHeader{
+        font-size: 24px;
+    }
+    .PostersInfoDescriptionFooter{
+        font-size: 18px;
+        padding: 0 15px;
+        margin: 15px 0;
+    }
+    .PostersInfoDescriptionFooterDepartment{
+        font-size: 16px;
+    }
+}
+
+/* Экстрабольшие девайсы (большие десктопы, >= 1200px) */
+/* @media (max-width: 1200px) {
+
+} */

@@ -12,83 +12,6 @@ main{
 .MainBlock{
 	width: 960px;
 }
-
-
-.SearchBlock{
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	/*height: 420px;*/
-	/*background-color: gray;*/
-
-}
-
-.searchForm{
-	display: flex;
-}
-
-.FakeBoxInput{
-	display: flex;
-	/*margin: 5% 0 0 0;*/
-	background-color: #eee;
-	height: 45px;
-	width: 100%;
-	box-shadow: var(--inputShadow);
-}
-.FakeBoxInputText{
-	width: 100%;
-	height: 45px;
-	background-color: rgba(0,0,0,0);
-	padding: 0 10px;
-	font-family: var(--font_Famaly);
-	font-size: var(--font_Size_Header_lodo);
-}
-
-
-.FakeBoxInputText::-webkit-input-placeholder {
-	font-family: 'myFont', var(--font_Famaly);
-	font-size: var(--font_Size_Header_lodo);
-}
-
-.FakeBoxInputText:-ms-input-placeholder {
-	font-family: 'myFont', var(--font_Famaly);
-	font-size: var(--font_Size_Header_lodo);
-}
-
-.FakeBoxInputText:-moz-placeholder {
-	font-family: 'myFont', var(--font_Famaly);
-	font-size: var(--font_Size_Header_lodo);
-}
-
-.FakeBoxInputText::-moz-placeholder {
-	font-family: 'myFont', var(--font_Famaly);
-	font-size: var(--font_Size_Header_lodo);
-}
-
-
-.FakeBoxInputButton{
-	width: 50px;
-	height: 45px;
-	background-color: rgba(0,0,0,0);
-
-	background-image: url("../media/mainPage/searchBlock/lupa1.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 40%;
-	cursor: pointer;
-}
-
-#topFiveBooks{
-	display: flex;
-	justify-content: space-between;
-}
-#topFiveBooks img{
-	width: 100%;
-}
-#topFiveBooks img:hover{
-	box-shadow: 0px 0px 10px rgba(78, 156, 114, 1);
-}
-
 .InfoBlockSpan{
 	display: flex;
 	flex-direction: column;
@@ -155,44 +78,6 @@ main{
 	margin: 30px 0 10px 0;
 	/*height: 600px;*/
 }
-
-
-
-/*.JournalLeft{*/
-/*display: -webkit-box;*/
-/*display: -moz-box;*/
-/*display: -ms-flexbox;*/
-/*display: -webkit-flex;*/
-/*display: flex;*/
-/*align-items: center;*/
-/*justify-content: center;*/
-/*text-align: center;*/
-/*flex-direction: column;*/
-/*color: #222;*/
-/*width: 50%;*/
-/*height: 100%;*/
-/*font-family: var(--font_Famaly);*/
-/*!* font-size: 20px; *!*/
-/*!* text-align: center; *!*/
-/*margin: 5px 0 5px 10px;*/
-/*}*/
-/*.JournalRight{*/
-/*display: -webkit-box;*/
-/*display: -moz-box;*/
-/*display: -ms-flexbox;*/
-/*display: -webkit-flex;*/
-/*display: flex;*/
-/*align-items: center;*/
-/*justify-content: center;*/
-/*flex-direction: column;*/
-/*color: #222;*/
-/*width: 50%;*/
-/*height: 100%;*/
-/*}*/
-/*.JournalRight img{*/
-/*width: 100%;*/
-/*}*/
-
 
 
 .InfoBlockSpan p{
@@ -275,3 +160,29 @@ input:-webkit-autofill {
 	-webkit-animation-name: autofill;
 	-webkit-animation-fill-mode: both;
 }
+
+
+
+/* Малые девайсы («ландшафтные телефоны», >= 576px) */
+/* @media (max-width: 576px) {
+
+} */
+
+/* Средние девайсы («таблетки», >= 768px) */
+/* @media (max-width: 768px)  {
+
+} */
+
+/* Большие девайсы (десктопы, >= 992px) */
+@media (max-width: 992px) {
+	.InfoBlockSpan{
+		height: auto !important;
+		min-height: 80px;
+	}
+
+}
+
+/* Экстрабольшие девайсы (большие десктопы, >= 1200px) */
+/* @media (max-width: 1200px) {
+
+} */

@@ -4,11 +4,11 @@
 
 
 .component{
-	transform: scale(0.7);
+	transform: scale(0.8);
 }
 .component *{
 	-webkit-font-smoothing: subpixel-antialiased;
-	background: #ecf0f1;
+	/* background: #ecf0f1; */
 	color: #34495e;
 	/*font-family: 'Lato', 'Arial', sans-serif;*/
 	font-weight: 400;
@@ -699,7 +699,7 @@ Table of Contents
 @media screen and (max-width: 37.8125em) {
 	.align > li {
 		width: 100%;
-		min-height: 440px;
+		/* min-height: 440px; */
 		height: auto;
 		padding: 0;
 		margin: 0 0 30px 0;

@@ -1,5 +1,5 @@
 .PosterBlock{
-    height: 600px;
+    /* height: 600px; */
     /* background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(/resources/media/mainPage/poster/bgPosters.jpg); */
     /* background-repeat: no-repeat; */
     /* background-position: center; */
@@ -18,14 +18,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120px;
+    padding: 0 0 10px 0;
+    /* height: 120px; */
     /* background-color: #eeeeee; */
     /* border-top: 1px solid #2a4860;*/
 }
-.Posters {
-    height: 480px;
-    /*background-color: blue;*/
-}
+
 .Disabled{
 	display: none;
 }
@@ -41,7 +39,7 @@
 
 .slick-slide img {
     width: 280px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.9);
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
 }
 
 .slick-prev:before,
@@ -69,8 +67,9 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    width: 800px;
-    height: 100px;
+    align-items: center;
+    /* width: 800px; */
+    /* height: 100px; */
     /*border-top: 1px solid #2a4961;*/
 }
 .PostersInfoDate{
@@ -83,7 +82,7 @@
     justify-content: center;
     flex-direction: column;
     word-break: break-all;
-    width: 100px;
+    width: 200px;
     height: 100%;
 
     -moz-user-select: none;
@@ -124,7 +123,7 @@
     flex-direction: column;
     word-break: break-all;
     flex: 1;
-    /*width: 200px;*/
+    width: 610px;
     height: 100%;
 }
 .PostersInfoDescriptionHeader{
@@ -147,6 +146,7 @@
     line-height: 20px;
     padding: 0 5px;
     color: #eee;
+    margin: 15px 0;
 }
 .PostersInfoTime{
     display: -webkit-box;
@@ -158,14 +158,18 @@
     justify-content: center;
     flex-direction: column;
     word-break: break-all;
-    width: 100px;
+    width: 200px;
     height: 100%;
 
     -moz-user-select: none;
     -khtml-user-select: none;
     user-select: none;
 }
-
+.slick-slider{
+    height: fit-content;
+    /* background-color: rebeccapurple; */
+    padding: 15px 0; 
+}
 /* ---------------------------------mobile------------------------------------------------------ */
 
 
@@ -188,7 +192,7 @@
         height: auto !important;
     }
     .PostersInfo{
-        height: auto;
+        height: fit-content;
     }
     .PostersInfoBlock{
         flex-direction: column;
@@ -218,6 +222,9 @@
     }
     .PostersInfoTime{
         width: 50%;
+    }
+    .PostersInfoDescription{
+        width: auto;
     }
     .PostersInfoDescriptionHeader{
         font-size: 24px;

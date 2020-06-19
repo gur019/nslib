@@ -5,7 +5,7 @@
 	align-items: center;
 	/* height: 400px; */
     /*background-color: #222;*/
-    margin: 0 0 30px 0;
+    /* margin: 0 0 30px 0; */
 }
 .CalendarRight{
 	display: -webkit-box;
@@ -43,3 +43,36 @@
 	/*font-size: 14px;*/
 	margin: 10px;
 }
+
+/* ---------------------------------mobile------------------------------------------------------ */
+
+
+/* Малые девайсы («ландшафтные телефоны», >= 576px) */
+/* @media (max-width: 576px) {
+
+} */
+
+/* Средние девайсы («таблетки», >= 768px) */
+/* @media (max-width: 768px)  {
+
+} */
+
+/* Большие девайсы (десктопы, >= 992px) */
+@media (max-width: 992px) {
+	.Calendar{
+		flex-direction: column;
+	}
+	.CalendarLeft{
+		width: 100%;
+		height: initial;
+	}
+	.CalendarRight{
+		width: 100%;
+		height: initial;
+	}
+}
+
+/* Экстрабольшие девайсы (большие десктопы, >= 1200px) */
+/* @media (max-width: 1200px) {
+
+} */

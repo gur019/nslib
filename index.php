@@ -7,24 +7,26 @@
 
     <title>ННБ Владикавказ</title>
 
-    <link rel="stylesheet" href="css/style_Global_Vars.css">
-    <link rel="stylesheet" href="css/style_index.css">
+    <link rel="stylesheet" href="css/style_Global_Vars.css?<?=filemtime('css/style_Global_Vars.css')?>">
+    <link rel="stylesheet" href="css/style_index.css?<?=filemtime('css/style_index.css')?>">
     <link rel="stylesheet" href="css/sliderPosters.css?<?=filemtime('css/sliderPosters.css')?>">
-    <link rel="stylesheet" href="css/style_Header.css">
+    <link rel="stylesheet" href="css/style_Header.css?<?=filemtime('css/style_Header.css')?>">
 
     <!-- ----------------bootstrap-------------------- -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css?<?=filemtime('js/slick/slick.css')?>">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css?<?=filemtime('js/slick/slick-theme.css')?>">
 
-    <link rel="stylesheet" href="css/input_search_mainPage/input_search_mainPage.css">
-    <link rel="stylesheet" href="css/bookAnim/bookAnimTopMain.css">
+    <link rel="stylesheet" href="css/input_search_mainPage/input_search_mainPage.css?<?=filemtime('css/input_search_mainPage/input_search_mainPage.css')?>">
+    <link rel="stylesheet" href="css/bookAnim/bookAnimTopMain.css?<?=filemtime('css/bookAnim/bookAnimTopMain.css')?>">
 
-    <link rel="stylesheet" href="css/archivePage/archivePage.css">
-    <link rel="stylesheet" href="css/ToDay/style_ToDay.css">
-    <link rel="stylesheet" href="css/calendarPage/calendarPage.css">
-    <link rel="stylesheet" href="css/journal/journal.css">
+    <link rel="stylesheet" href="css/archivePage/archivePage.css?<?=filemtime('css/archivePage/archivePage.css')?>">
+    <link rel="stylesheet" href="css/ToDay/style_ToDay.css?<?=filemtime('css/ToDay/style_ToDay.css')?>">
+    <link rel="stylesheet" href="css/calendarPage/calendarPage.css?<?=filemtime('css/calendarPage/calendarPage.css')?>">
+    <link rel="stylesheet" href="css/journal/journal.css?<?=filemtime('css/journal/journal.css')?>">
+    <link rel="stylesheet" href="css/contact/contact.css?<?=filemtime('css/contact/contact.css')?>">
+    <link rel="stylesheet" href="css/style_footer.css?<?=filemtime('css/style_footer.css')?>">
 
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
@@ -64,34 +66,8 @@
         
         <?php include 'templates/includes/journal.html';?>
         
-
-        <div class="InfoBlockSpan">
-            <span style="color: #142638;">Контакты</span>
-            <p style="color: #142638;">Вы сможите с нами связаться:</p>
-        </div>
-        <div class="ContactBlock">
-            <div class="ContactText">
-                <div class="ContactCoordinates">
-                    <img src="media/mainPage/Contact/phone512.png" alt="">
-                    <span>Мы находимся по адресу:</span>
-                    <p>г.Владикавказ, ул.Коцоева 43</p>
-
-                </div>
-                <div class="ContactTel">
-                    <img src="media/mainPage/Contact/w512h5121390854463phone512.png" alt="">
-                    <span>Телефон для справок:</span>
-                    <a href="tel:88672251867">8(8672)25-18-67</a>
-                </div>
-                <div class="ContactMail">
-                    <img src="media/mainPage/Contact/hone512.png" alt="">
-                    <span>E-mail:</span>
-                    <a href="mailto:nnb-rso@yandex.ru">nnb-rso@yandex.ru</a>
-                </div>
-            </div>
-            <div class="ContactMap">
-                <iframe src="https://yandex.ru/map-widget/v1/-/CGsrjE-m" width="100%" height="400px" frameborder="1" allowfullscreen="true"></iframe>
-            </div>
-        </div>
+        <?php include 'templates/includes/contact.html';?>
+        
         <footer>
           <?php include 'templates/includes/footer.html';?>
         </footer>

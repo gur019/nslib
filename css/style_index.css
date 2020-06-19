@@ -9,20 +9,23 @@ main{
 	/*height: 100vh;*/
 }
 
-.MainBlock{
+/* .MainBlock{
 	width: 960px;
-}
+	height: 100vh !important;
+	width: 100vw !important;
+} */
 .InfoBlockSpan{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 80px;
+	height: 60px;
 	width: 100%;
 	font-family: var(--font_Famaly);
 	font-size: var(--font_Size_Info_Block);
-	margin: 20px 0 0 0;
+	/* margin: 20px 0 0 0; */
 	font-weight: 900;
+	text-align: center;
 }
 .InfoBlockSpanJournal{
 	background-color: #161018;
@@ -41,18 +44,7 @@ main{
 	margin: 0;
 	color: #222;
 }
-.InfoBlockSpanToDay{
-	background: var(--bg_header);
-	color: #142638;
-}
-.ToDay{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	/*height: 400px;*/
-	background: var(--bg_header);
-}
+
 
 .todoBlock{
 	display: flex;
@@ -85,66 +77,6 @@ main{
 	font-size: 16px;
 }
 
-.ContactBlock{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 600px;
-	/*background-color: red;*/
-}
-
-.ContactText{
-	display: flex;
-	width: 100%;
-	align-items: flex-start;
-	justify-content: center;
-}
-.ContactText img{
-	width: 40px;
-}
-.ContactText span{
-	font-family: var(--font_Famaly);
-	/*font-size: 20px;*/
-	text-align: center;
-	margin: 10px 0 0 0;
-}
-.ContactText p {
-	font-family: var(--font_Famaly);
-}
-.ContactText a {
-	font-family: var(--font_Famaly);
-}
-.ContactCoordinates, .ContactTel, .ContactMail{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 20px;
-	width: 250px;
-}
-.ContactMap{
-	width: 100%;
-	margin: 20px;
-}
-
-.InfoBlockSpanFooter{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 100px;
-	font-family: var(--font_Famaly);
-	font-size: var(--font_Size_Info_Block);
-}
-
-.InfoBlockSpanFooter img{
-	width: 50px;
-	margin: 10px;
-}
-.InfoBlockSpanFooter p{
-	font-family: var(--font_Famaly);
-	font-size: 16px;
-}
 .SearchOff{
 	display: none;
 }
@@ -161,7 +93,7 @@ input:-webkit-autofill {
 	-webkit-animation-fill-mode: both;
 }
 
-
+/* ---------------------------------mobile------------------------------------------------------ */
 
 /* Малые девайсы («ландшафтные телефоны», >= 576px) */
 /* @media (max-width: 576px) {

@@ -5,6 +5,7 @@
 
 .component{
 	transform: scale(0.8);
+	width: 50%;
 }
 .component *{
 	-webkit-font-smoothing: subpixel-antialiased;
@@ -709,12 +710,12 @@ Table of Contents
 		margin: 0 auto;
 	}
 
-	figcaption {
+	/* figcaption {
 		text-align: center;
 		width: 320px;
 		top: 250px;
 		padding-left: 0;
 		left: -80px;
 		font-size: 90%;
-	}
+	} */
 }

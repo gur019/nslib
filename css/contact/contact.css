@@ -1,0 +1,66 @@
+.ContactBlock{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/* height: 600px; */
+	/*background-color: red;*/
+}
+
+.ContactText{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.ContactText img{
+	width: 40px;
+}
+.ContactText span{
+	font-family: var(--font_Famaly);
+	/*font-size: 20px;*/
+	text-align: center;
+	margin: 10px 0 0 0;
+}
+.ContactText p {
+	font-family: var(--font_Famaly);
+}
+.ContactText a {
+	font-family: var(--font_Famaly);
+}
+.ContactCoordinates, .ContactTel, .ContactMail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 260px;
+}
+.ContactMap{
+	width: 100%;
+	margin: 20px;
+}
+
+/* ---------------------------------mobile------------------------------------------------------ */
+
+/* Малые девайсы («ландшафтные телефоны», >= 576px) */
+/* @media (max-width: 576px) {
+
+} */
+
+/* Средние девайсы («таблетки», >= 768px) */
+/* @media (max-width: 768px)  {
+
+} */
+
+/* Большие девайсы (десктопы, >= 992px) */
+@media (max-width: 992px) {
+    .ContactText{
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+/* Экстрабольшие девайсы (большие десктопы, >= 1200px) */
+/* @media (max-width: 1200px) {
+
+} */

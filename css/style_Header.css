@@ -179,6 +179,11 @@ header{
   .navbar-toggler.collapsed .bottom-bar {
 	transform: rotate(0);
   }
+  .removeLink{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 /* --------------------------------------------------------------------------------------------- */
 /* ---------------------------------mobile------------------------------------------------------ */
@@ -192,8 +197,7 @@ header{
 /* Средние девайсы («таблетки», >= 768px) */
 @media (max-width: 768px)  {
 	.removeLink{
-		position: absolute;
-    	top: 9999999;
+		display: none;
 	}
 }
 

@@ -2,10 +2,10 @@
 <head>
     <title>Search_Books</title>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="js/downloadScripts.js"></script>
-    <script src="js/parserInfoBooks.js"></script>
+    <script src="/js/downloadScripts.js"></script>
+    <script src="/js/parserInfoBooks.js"></script>
 
-    <script src="js/LoDash.js"></script>
+    <script src="/js/LoDash.js"></script>
 
     <!-- ----------------bootstrap-------------------- -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -33,20 +33,20 @@
 
 
     <script>
-        if ([[${fromMainPage}]]){
-            fromMainSearch = true;
-            basicSearch = false;
+        // if ([[${fromMainPage}]]){
+        //     fromMainSearch = true;
+        //     basicSearch = false;
 
-            searchStr = '[[${searchString}]]';
-        }
+        //     searchStr = '[[${searchString}]]';
+        // }
 
-        if ([[${basicSearch}]]) {
-            fromMainSearch = false;
-            basicSearch = true;
-            searchName = '[[${searchName}]]';
-            searchAuthor = '[[${searchAuthor}]]';
-            searchYear = '[[${searchYear}]]';
-        }
+        // if ([[${basicSearch}]]) {
+        //     fromMainSearch = false;
+        //     basicSearch = true;
+        //     searchName = '[[${searchName}]]';
+        //     searchAuthor = '[[${searchAuthor}]]';
+        //     searchYear = '[[${searchYear}]]';
+        // }
 
         // books = [[${bookList}]];
     </script>
@@ -68,13 +68,13 @@
         <div class="PageNumBooksPlace"></div>
         <div class = "booksSearchResult">
             <script type="text/template" id="description">
-                <?php include 'templates/includes/bookDescription.html';?>
+                <?php include 'includes/bookDescription.html';?>
             </script>
         </div>
         <div class = "booksSearchResultHtml"></div>
         <div class="PageNumBooksTemplate">
             <script type="text/template" id="switchPages">
-                <?php include 'templates/includes/pageSwitcher.html';?>
+                <?php include 'includes/pageSwitcher.html';?>
             </script>
          </div>
         <div class="PageNumBooksPlace"></div>

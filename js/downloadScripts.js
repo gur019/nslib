@@ -5,7 +5,7 @@ function downloadbook(pathToBook) {
 
     formData.append("pathToBook", pathToBook);
     $.ajax({
-        url: location.href = window.location.protocol + '//'+ window.location.host + '/downloadbook',
+        url: location.href = window.location.protocol + '//'+ customHost + '/downloadbook',
         enctype: "multipart/form-data",
         method: "POST",
         data: formData,
@@ -23,7 +23,7 @@ function downloadbook(pathToBook) {
 
 function simpleDownload(searchData, docId){
     var link = document.createElement('a');
-    link.href = window.location.protocol + '//'+ window.location.host + '/downloadBook?searchName=' + searchData + '&bid=' + docId;
+    link.href = window.location.protocol + '//'+ customHost + '/downloadBook?searchName=' + searchData + '&bid=' + docId;
     link.download = "";
     document.body.appendChild(link);
     link.click();
@@ -31,6 +31,6 @@ function simpleDownload(searchData, docId){
 }
 
 function simpleViewForPdf(searchData, docId){
-    var url = window.location.protocol + '//'+ window.location.host + '/downloadBook?searchName=' + searchData + '&bid=' + docId;
+    var url = window.location.protocol + '//'+ customHost + '/downloadBook?searchName=' + searchData + '&bid=' + docId;
     window.open(url);
 }

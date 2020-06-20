@@ -8,18 +8,16 @@ main{
     flex-direction: column;
     /*height: 100vh;*/
 }
-.MainBlock{
-    width: 960px;
-}
+
 #headerInfo{
-    display: none;
+    display: none !important;
 }
 .InfoBlockSpan{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: 60px;
     font-family: var(--font_Famaly);
     font-size: var(--font_Size_Info_Block);
     /*border-bottom: 1px solid var(--bg_header);*/
@@ -39,31 +37,22 @@ main{
     /*background-color: red;*/
 }
 .BlockInfo{
-    width: 300px;
+    /* width: 300px; */
     height: 400px;
     /*background-color: green;*/
 }
 .BlockInfo a{
-    color: #eee;
-    font-family: var(--font_Famaly);
-    font-size: 20px;
-    line-height: 1.2;
+    /* color: #eee; */
+    /* font-family: var(--font_Famaly); */
+    font-size: 18px;
+    /* line-height: 1.2; */
     padding: 5px;
+    text-decoration: none !important;
 }
 .BlockInfo article:hover{
     box-shadow: var(--inputShadow);
 }
-.BlockInfo:nth-child(1n){
-    margin-right: 30px;
-    margin-left: 0;
-}
-.BlockInfo:nth-child(3n){
-    margin-right: 0;
-    margin-left: auto;
-}
-.BlockInfoMargin {
-    margin: 15px 0;
-}
+
 .BlockInfoImg{
     width: 100%;
     height: 60%;
@@ -78,11 +67,11 @@ main{
     align-items: center;
     justify-content: center;
     height: 40%;
-    /*background-color: gray;*/
-    font-family: 'Lato', 'Arial', sans-serif;
-    font-weight: 600;
-    font-size: 100%;
-    line-height: 1.2;
+    /* background-color: gray; */
+    /* font-family: 'Lato', 'Arial', sans-serif; */
+    /* font-weight: 600; */
+    /* font-size: 100%; */
+    /* line-height: 1.2; */
     text-align: center;
 }
 
@@ -109,3 +98,30 @@ main{
 .bBlue{
     background-color: #1ba1a3;
 }
+
+/* ---------------------------------mobile------------------------------------------------------ */
+
+
+/* Малые девайсы («ландшафтные телефоны», >= 576px) */
+/* @media (max-width: 576px) {
+
+} */
+
+/* Средние девайсы («таблетки», >= 768px) */
+/* @media (max-width: 768px)  {
+
+} */
+
+/* Большие девайсы (десктопы, >= 992px) */
+@media (max-width: 992px) {
+    
+    .disabledLine{
+        display: none;
+    }
+
+}
+
+/* Экстрабольшие девайсы (большие десктопы, >= 1200px) */
+/* @media (max-width: 1200px) {
+
+} */

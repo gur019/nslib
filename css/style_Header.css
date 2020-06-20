@@ -33,22 +33,15 @@ header{
 	font-family: var(--font_Famaly);
 	font-size: var(--font_Size_Header_lodo);
 	margin: 0 0 0 10px;
-	/*line-height: 90%;*/
-	/*text-align: center;*/
 	cursor: pointer;
 	color: #fff;
 	text-shadow: 0 0 4px rgba(0,0,0,.5);
 }
-#spacing{
-	/*letter-spacing: 7px;*/
-	/*margin: 0 0 0 6px;*/
-}
+
 #hMenu{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	/*background-color: aqua;*/
-	/* width: 50%; */
 	height: 100%;
 }
 .menuBG{
@@ -59,9 +52,7 @@ header{
 }
 
 #headerInfo{
-	/*width: 960px;*/
 	height: fit-content;
-	/*border-top: 1px solid #eee;*/
 }
 .overlayMenu a {
 	font-family: var(--font_Famaly);
@@ -70,7 +61,6 @@ header{
 
 .headerMK{
 	height: 50px !important;
-	/*margin: 0 0 0 20px !important;*/
 	filter: opacity(0.6) !important;
 }
 .headerMKA{
@@ -88,7 +78,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 40px
+	height: 40px;
+	padding: 0 !important;
 }
 .divButTop{
 	height: 1px !important;
@@ -119,6 +110,7 @@ header{
 }
 .hFit{
 	height: fit-content;
+	z-index: 100;
 }
 .disabledLine{
 	display: none;
@@ -184,6 +176,12 @@ header{
 	justify-content: center;
 	align-items: center;
 }
+.MA{
+	margin: 5px 0 5px 5px;
+}
+.navbar-brand{
+	margin-right: 0 !important;
+}
 
 /* --------------------------------------------------------------------------------------------- */
 /* ---------------------------------mobile------------------------------------------------------ */
@@ -248,7 +246,12 @@ header{
 		display: block;
 		background-clip: content-box;
 	}
-	
+	.MA{
+		margin: 5px;
+	}
+	.MA2{
+		margin: .5rem;
+	}
 
 }
 

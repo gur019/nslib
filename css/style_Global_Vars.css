@@ -8,29 +8,25 @@ a{
 	text-decoration: none;
 }
 .link{
-	font-family: var(--font_Famaly);
+	font-family: var(--font_Famaly) !important;
 	font-size: 15px;
-	color: #fff;
+	color: #fff !important;
 	/* color: red !important; */
-	transition-duration: 0.2s;
+	transition-duration: 0.2s !important;
 	text-decoration: none !important;
 }
 .link:hover{
 	color: #112f50 !important;
 }
 
-@font-face {
-	font-family: Gabriola; /* Имя шрифта */
-	src: url(/fonts/11053.ttf); /* Путь к файлу со шрифтом */
-}
 
 :root{
-
+	--font-Family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; /* Имя шрифта */
 	--bg_header: #478867;
 	/*--bg_header: linear-gradient(to bottom, #4981ad, #559fca);*/
 	--bg_button: #478867;
 
-	--font_Famaly: sans-serif;
+	/* --font_Famaly: sans-serif; */
 	--font_Size_Header_lodo: 16px;
 
 	--font_All_color: 85,85,85;

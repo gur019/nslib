@@ -38,7 +38,7 @@
 .CalendarRight span{
 	/* text-transform: uppercase; */
 	color: #142638;
-	font-weight: bold;
+	/* font-weight: bold; */
 	font-family: var(--font_Famaly);
 	/*font-size: 14px;*/
 	margin: 10px;

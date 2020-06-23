@@ -8,6 +8,13 @@ document.addEventListener("DOMContentLoaded", function() {
     var yearInPath = window.location.pathname.split("/");
 
 
+    var countEvents = document.getElementById("countEvents");
+
+    var countCards = document.getElementsByClassName("card");
+
+    countEvents.innerText = "Всего: " + countCards.length;
+
+
     calendarHeader = document.getElementsByClassName("CalendarArchiveHeader")[0];
     childCalendarHeader = calendarHeader.childNodes;
     childCalendarHeader[0].innerText = yearInPath[3];
@@ -36,7 +43,8 @@ document.addEventListener("DOMContentLoaded", function() {
             // a.innerText = monthName[i];
         }
         else{
-            document.getElementById("month_" + i).style.backgroundColor = "red";
+            // document.getElementById("month_" + i).style.backgroundColor = "red";
+            document.getElementById("month_" + i).style.opacity = "0.3";
         }
         
 
@@ -48,6 +56,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function monthSelect(monthIndex) {
     monthButtonsStateNormal();
+
+    window.scrollTo(0,0);
     //childCalendarHeader[1].innerText = monthName[monthIndex];
     monthButtons[monthIndex].classList.add("MonthActive");
     //var year = childCalendarHeader[0].innerText;
@@ -74,8 +84,9 @@ function monthButtonsStateNormal(){
 }
 
 function showAllYear(){
+    window.scrollTo(0,0);
     document.getElementById("messageNotFound").style.display = "none";
-    monthButtonsStateNormal()
+    monthButtonsStateNormal();
     for (let i = 0; i<12; i++){
         if (monthBlocks[i] != null){
             monthBlocks[i].style.display = "block";
@@ -102,26 +113,3 @@ function arrowYearChange(direction) {
     //alert("aaasssss");
 }
 
-// function getConcert(year, month) {
-//     $.ajax({
-//         url: window.location.protocol + "//" + window.location.host + "/getArcEvents?year=" + year + "&month=" + month,
-//         method: 'GET',
-//         type: 'GET',
-
-//         success: function (data) {
-//             console.log(data);
-//             // var deletedPost = document.getElementById("idPost_" + id);
-//             // deletedPost.children[1].style.display = "none";
-//             // deletedPost.children[0].style.display = "block";
-
-
-//         },
-//         error: function (e) {
-//             alert(e.responseText);
-//         }
-//     });
-// }
-
-// function getConcert(monthIndex){
-//     console.log(monthIndex);
-// }

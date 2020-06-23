@@ -42,7 +42,7 @@
                 <div class="BlockInfo link">
                     <article class="BlockArticle bBlue">
                         <div class="BlockInfoImg"><img src="/media/library/img1.jpg" alt=""></div>
-                        <div class="BlockInfoTitle"><a class="BlockInfoLink link" href="/content/history">История</a></div>
+                        <div class="BlockInfoTitle"><a class="BlockInfoLink link" href="../page/history.php">История</a></div>
                     </article>
                 </div>
             </div>

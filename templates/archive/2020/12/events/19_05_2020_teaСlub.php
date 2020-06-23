@@ -1,21 +1,26 @@
 <html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
 <head>
+    <meta charset="utf-8" />
+    <!-- ----------------bootstrap-------------------- -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>История</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" type="text/javascript"></script>
 
+
+
+    <link rel="stylesheet" href="/css/style_Global_Vars.css?<?=filemtime('../../../../../css/style_Global_Vars.css')?>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <link rel="stylesheet" href="/css/style_Header.css?<?=filemtime('../../../../../css/style_Header.css')?>">
+    <link rel="stylesheet" href="/css/style_footer.css?<?=filemtime('../../../../../css/style_footer.css')?>">
+
+    <link rel="stylesheet" href="/css/KarinaCSS/eventDetails.css?<?=filemtime('../../../../../css/KarinaCSS/eventDetails.css')?>">
+
     <!-- ----------------bootstrap-------------------- -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-
-    <link rel="stylesheet" href="/css/style_Global_Vars.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
-    <link rel="stylesheet" href="/css/style_Header.css">
-    <link rel="stylesheet" href="/css/footer.css">
-
-    <link rel="stylesheet" href="/css/KarinaCSS/eventDetails.css">
-
-    <script src="/js/eventDetails/gallery.js" type="text/javascript"></script>
+    <!-- <script src="/js/eventDetails/gallery.js" type="text/javascript"></script> -->
 
      <!-- ----------------bootstrap-------------------- -->
    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
@@ -29,7 +34,7 @@
 </header>
 <main>
     <div class="MainBlock container">
-        <div class="selectedPhotoPage">
+        <div class="selectedPhotoPage mt-4">
             <div class="card__info">
                 <h1 class="card__title">Поэтический вечер "Чай клуб"</h1>
             </div>
@@ -37,7 +42,7 @@
         </div>
         <div class="InfoBlock">
 
-            <div class="textBlock">
+            <div class="mt-4">
                 <span>1894 г.,6 февраля — на имя командующего войсками Кав­казского военного округа инициативной группой во главе с В. Г. Шредерс отправлен рапорт, в котором изложена мысль об учреждении Владикавказской общественной библиотеки.
 1895 г.,22 июня — утвержден Устав Владикавказской общественной библиотеки за подписью Военного Министра Генерал-адъютанта Обручева.
 1895 г.,28 августа — Устав Библиотеки вручен В.Г. Шредерс.
@@ -48,34 +53,45 @@
                 </span>
             </div>
 
-            <div class="container">
-                <section class="img-gallery-magnific">
+            <div class="row">
+
+                <div class="col-lg-4 col-sm-6 mt-4">
                     <div class="magnific-img">
                         <a class="image-popup-vertical-fit" href="/media/mainPage/gallery/g1.jpg" >
                             <img src="/media/mainPage/gallery/g1.jpg" alt="" />
                         </a>
                     </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 mt-4">
                     <div class="magnific-img">
                         <a class="image-popup-vertical-fit" href="/media/mainPage/gallery/g2.jpg" >
                             <img src="/media/mainPage/gallery/g2.jpg" alt="" />
                         </a>
                     </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 mt-4">
                     <div class="magnific-img">
                         <a class="image-popup-vertical-fit" href="/media/mainPage/gallery/g3.jpg">
                             <img src="/media/mainPage/gallery/g3.jpg" alt="" />
                         </a>
                     </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 mt-4">
                     <div class="magnific-img">
                         <a class="image-popup-vertical-fit" href="/media/mainPage/gallery/g4.jpg">
                             <img src="/media/mainPage/gallery/g4.jpg" alt="" />
                         </a>
                     </div>
-                </section>
+                </div>
+                
             </div>
 
 
 
-            <div class="textBlock">
+            <div class="mt-4">
                 <span>1894 г.,6 февраля — на имя командующего войсками Кав­казского военного округа инициативной группой во главе с В. Г. Шредерс отправлен рапорт, в котором изложена мысль об учреждении Владикавказской общественной библиотеки.
 1895 г.,22 июня — утвержден Устав Владикавказской общественной библиотеки за подписью Военного Министра Генерал-адъютанта Обручева.
 1895 г.,28 августа — Устав Библиотеки вручен В.Г. Шредерс.
@@ -106,86 +122,48 @@
 1969 г. — при Библиотеке создан народный университет культуры, ректором которого стал кандидат филологических наук, доцент СОГУ Д.А. Гиреев. </span>
             </div>
 
-            <div class="container">
 
-                <p><section class="img-gallery-magnific">
+               
+            <div class="row">
+
+                <div class="col-lg-4 col-sm-6 mt-4">
                     <div class="magnific-img">
-                        <a class="image-popup-vertical-fit" href="https://unsplash.it/974/?random" title="9.jpg">
-                            <img src="https://unsplash.it/974/?random" alt="9.jpg" />
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        <a class="image-popup-vertical-fit" href="/media/mainPage/gallery/g1.jpg" >
+                            <img src="/media/mainPage/gallery/g1.jpg" alt="" />
                         </a>
                     </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 mt-4">
                     <div class="magnific-img">
-                        <a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random" title="10.jpg">
-                            <img src="https://unsplash.it/900/?random" alt="10.jpg" />
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        <a class="image-popup-vertical-fit" href="/media/mainPage/gallery/g2.jpg" >
+                            <img src="/media/mainPage/gallery/g2.jpg" alt="" />
                         </a>
                     </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 mt-4">
                     <div class="magnific-img">
-                        <a class="image-popup-vertical-fit" href="https://unsplash.it/902" title="3.jpg">
-                            <img src="https://unsplash.it/902/" alt="3.jpg" />
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        <a class="image-popup-vertical-fit" href="/media/mainPage/gallery/g3.jpg">
+                            <img src="/media/mainPage/gallery/g3.jpg" alt="" />
                         </a>
                     </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 mt-4">
                     <div class="magnific-img">
-                        <a class="image-popup-vertical-fit" href="https://unsplash.it/901" title="4.jpg">
-                            <img src="https://unsplash.it/901" alt="4.jpg" />
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        <a class="image-popup-vertical-fit" href="/media/mainPage/gallery/g4.jpg">
+                            <img src="/media/mainPage/gallery/g4.jpg" alt="" />
                         </a>
                     </div>
-                    <div class="magnific-img">
-                        <a class="image-popup-vertical-fit" href="https://unsplash.it/888/?random" title="1.jpg">
-                            <img src="https://unsplash.it/888/?random" alt="1.jpg" />
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <div class="magnific-img">
-                        <a class="image-popup-vertical-fit" href="https://unsplash.it/931/?random" title="2.jpg">
-                            <img src="https://unsplash.it/931/?random" alt="2.jpg" />
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <div class="magnific-img">
-                        <a class="image-popup-vertical-fit" href="https://unsplash.it/908/?random" title="5.jpg">
-                            <img src="https://unsplash.it/908/?random" alt="5.jpg" />
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <div class="magnific-img">
-                        <a class="image-popup-vertical-fit" href="https://unsplash.it/978/?random" title="6.jpg">
-                            <img src="https://unsplash.it/978/?random" alt="6.jpg" />
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <div class="magnific-img">
-                        <a class="image-popup-vertical-fit" href="https://unsplash.it/857/?random" title="7.jpg">
-                            <img src="https://unsplash.it/857/?random" alt="7.jpg" />
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <div class="magnific-img">
-                        <a class="image-popup-vertical-fit" href="https://unsplash.it/905/?random" title="8.jpg">
-                            <img src="https://unsplash.it/905/?random" alt="8.jpg" />
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <div class="magnific-img">
-                        <a class="image-popup-vertical-fit" href="https://unsplash.it/1230/?random" title="12.jpg">
-                            <img src="https://unsplash.it/1230/?random" alt="12.jpg" />
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </section>
-                <div class="clear"></div>
-                </p>
+                </div>
 
             </div>
 
 
-
         </div>
         <footer>
-            <th:block th:include="includes/footer.html"/>
+          <?php include '../../../../includes/footer.html';?>
         </footer>
     </div>
 </main>

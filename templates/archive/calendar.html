@@ -1,19 +1,21 @@
-<div class="CalendarArchive">
+<div class="CalendarArchive mt-4">
     <div class="arrowBack"><img src="/media/searchBooks/nextPage/arrow2.png" alt="" onclick="arrowYearChange(-1)"></div>
-    <div class="CalendarArchiveHeader"><h1 onclick="showAllYear()">2020</h1></div>
-    <div class="MonthBlock">
-        <div id = "month_0" class="Month"><p>янв</p></div>
-        <div id = "month_1" class="Month"><p>фев</p></div>
-        <div id = "month_2" class="Month"><p>мар</p></div>
-        <div id = "month_3" class="Month"><p>апр</p></div>
-        <div id = "month_4" class="Month"><p>май</p></div>
-        <div id = "month_5" class="Month"><p>июн</p></div>
-        <div id = "month_6" class="Month"><p>июл</p></div>
-        <div id = "month_7" class="Month"><p>авг</p></div>
-        <div id = "month_8" class="Month"><p>сен</p></div>
-        <div id = "month_9" class="Month"><p>окт</p></div>
-        <div id = "month_10" class="Month"><p>ноя</p></div>
-        <div id = "month_11" class="Month"><p>дек</p></div>
+    <div class="CalendarArchiveCenter">
+        <div class="CalendarArchiveHeader"><h1 onclick="showAllYear()">2020</h1><p id = "countEvents">Всего: 123</p></div>
+        <div class="MonthBlock">
+            <div id = "month_0" class="Month"><p>янв</p></div>
+            <div id = "month_1" class="Month"><p>фев</p></div>
+            <div id = "month_2" class="Month"><p>мар</p></div>
+            <div id = "month_3" class="Month"><p>апр</p></div>
+            <div id = "month_4" class="Month"><p>май</p></div>
+            <div id = "month_5" class="Month"><p>июн</p></div>
+            <div id = "month_6" class="Month"><p>июл</p></div>
+            <div id = "month_7" class="Month"><p>авг</p></div>
+            <div id = "month_8" class="Month"><p>сен</p></div>
+            <div id = "month_9" class="Month"><p>окт</p></div>
+            <div id = "month_10" class="Month"><p>ноя</p></div>
+            <div id = "month_11" class="Month"><p>дек</p></div>
+        </div>
     </div>
     <div class="arrowNext"><img src="/media/searchBooks/nextPage/arrow2.png" alt="" onclick="arrowYearChange(1)"></div>
 </div>
@@ -21,4 +23,4 @@
     var startYear = 2019;
     var endYear = 2020;
 </script>
-<h1 id="messageNotFound" style = "display:none;">В этом месяце не было мероприятий</h1>
+<p id="messageNotFound" style = "display:none;">В этом месяце не было мероприятий</p>

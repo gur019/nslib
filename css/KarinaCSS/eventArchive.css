@@ -19,7 +19,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: 60px;
     font-family: var(--font_Famaly);
     font-size: var(--font_Size_Info_Block);
     /*border-bottom: 1px solid var(--bg_header);*/
@@ -28,10 +28,13 @@ main{
 
 
 .InfoBlockSpanYear{
-    font-size: 30px;
-    font-weight: 900;
-    align-items: flex-start;
+    font-size: 24px !important;
+    color: #142638;
+    /* font-weight: 900;
+    align-items: flex-start; */
 }
+
+
 
 
 /*---------------------calendar--------------------*/
@@ -59,10 +62,14 @@ main{
     /*background-color: red;*/
     color: #142638;
     font-weight: 600;
+    cursor: pointer;
 }
 .CalendarArchiveHeader h1{
     font-weight: 600;
     font-size: 55px;
+}
+.CalendarArchiveHeader p{
+    text-align: center;
 }
 .arrowBack{
     display: flex;
@@ -101,12 +108,17 @@ main{
     transform: rotate(270deg);
     opacity: .5;
 }
+#messageNotFound{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 24px;
+}
 .MonthBlock{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 30%;
+    width: 35%;
     height: 100%;
     /*background-color: gold;*/
 }
@@ -133,4 +145,56 @@ main{
     background-color: rgba(20, 38, 56, .7);
     color: #eeeeee;
     box-shadow: 0 0 5px 5px rgba(238, 238, 238, .7);
+}
+.Month p{
+    margin: 0 !important;
+}
+.CalendarArchiveCenter{
+    display: flex;
+    /* background-color: red; */
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+/* ---------------------------------mobile------------------------------------------------------ */
+
+
+/* Малые девайсы («ландшафтные телефоны», >= 576px) */
+@media (max-width: 576px) {
+    .MonthBlock{
+        flex: 1;
+    }
+    .CalendarArchiveHeader{
+        height: auto;
+    }
+}
+
+/* Средние девайсы («таблетки», >= 768px) */
+/* @media (max-width: 768px)  {
+    
+} */
+
+/* Большие девайсы (десктопы, >= 992px) */
+@media (max-width: 992px) {
+    /* .MonthBlock{
+        flex: 1;
+    } */
+    .Month{
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+    .CalendarArchiveHeader h1{
+        font-size: 35px;
+        margin: 0;
+    }
+}
+
+/* Экстрабольшие девайсы (большие десктопы, >= 1200px) */
+@media (max-width: 1200px) {
+    .MonthBlock{
+        width: 40% ;
+    }
 }

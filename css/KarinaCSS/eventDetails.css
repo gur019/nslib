@@ -25,7 +25,6 @@ main{
     /*border-bottom: 1px solid var(--bg_header);*/
 }
 .selectedPhotoPage{
-    margin: 30px 0 0 0;
     height: 216px;
 }
 .selectedPhotoPage img{
@@ -45,9 +44,9 @@ main{
 .InfoBlock{
     font-family: var(--font_Famaly);
 }
-.textBlock{
+/* .textBlock{
     margin: 20px;
-}
+} */
 
 
 
@@ -68,13 +67,11 @@ a{
     height: 100%;
     object-fit: cover;
 }
-.mfp-bottom-bar,*{
-    font-family: 'Abel', sans-serif;
-}
+
 .magnific-img {
-    width: 32.3%;
+    /* width: 32.3%; */
     height: 280px;
-    margin: 4px;
+    /* margin: 4px; */
 }
 a.image-popup-vertical-fit {
     cursor: pointer;
@@ -468,3 +465,33 @@ img.mfp-img {
     .mfp-container {
         padding-left: 6px;
         padding-right: 6px; } }
+
+
+/* ---------------------------------mobile------------------------------------------------------ */
+
+
+/* Малые девайсы («ландшафтные телефоны», >= 576px) */
+/* @media (max-width: 576px) {
+
+} */
+
+/* Средние девайсы («таблетки», >= 768px) */
+/* @media (max-width: 768px)  {
+
+} */
+
+/* Большие девайсы (десктопы, >= 992px) */
+@media (max-width: 992px) {
+    .disabledLine{
+        display: none;
+    }
+    .card__title{
+        font-size: 26px;
+    }
+
+}
+
+/* Экстрабольшие девайсы (большие десктопы, >= 1200px) */
+/* @media (max-width: 1200px) {
+
+} */

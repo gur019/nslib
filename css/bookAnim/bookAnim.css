@@ -64,14 +64,14 @@
 	text-align: center;
 }
 
-.align > li {
+/* .align > li { */
 	/*width: 500px;*/
 	/*min-height: 300px;*/
 	/*display: inline-block;*/
 	/*margin: 30px 20px 30px 30px;*/
 	/*padding: 0 0 0 60px;*/
 	/*vertical-align: top;*/
-}
+/* } */
 
 /* ///////////////////////////////////////////////////
 
@@ -695,10 +695,10 @@ figcaption p {
 @media screen and (max-width: 37.8125em) {
 	.align > li {
 		width: 100%;
-		min-height: 440px;
+		/* min-height: 440px; */
 		height: auto;
 		padding: 0;
-		margin: 0 0 30px 0;
+		/* margin: 0 0 30px 0; */
 	}
 
 	.book {
@@ -714,3 +714,33 @@ figcaption p {
 		font-size: 90%;
 	}
 }
+
+
+/* ---------------------------------mobile------------------------------------------------------ */
+
+
+/* Малые девайсы («ландшафтные телефоны», >= 576px) */
+/* @media (max-width: 576px) {
+
+} */
+
+/* Средние девайсы («таблетки», >= 768px) */
+/* @media (max-width: 768px)  {
+
+} */
+
+/* Большие девайсы (десктопы, >= 992px) */
+@media (max-width: 992px) {
+	.cs-loader-inner{
+		width: 100% !important;
+		left: 0;
+	}
+	.cs-loader-inner label{
+		font-size: 10px !important;
+	}
+}
+
+/* Экстрабольшие девайсы (большие десктопы, >= 1200px) */
+/* @media (max-width: 1200px) {
+
+} */

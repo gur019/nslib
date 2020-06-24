@@ -30,17 +30,18 @@
         <?php include '../includes/header.html';?>
     </header>
     <div class="MainBlock container">
-        <div class="selectedPhotoPage">
+
+        <div class="selectedPhotoPage mt-4">
             <div class="card__info">
                 <h1 class="card__title">История</h1>
             </div>
             <img src="/media/history/photo1.jpg" alt="">
         </div>
 
-        <div class="InfoBlockSpan">
+        <div class="InfoBlockSpan mt-4">
             <span>ГЛАВНЫЕ ДАТЫ ИСТОРИИ ННБ</span>
         </div>
-        <div class="InfoBlock">
+        <div class="InfoBlock mt-4">
             <p>
                 <strong> 1894 г.,6 февраля — </strong> на имя командующего войсками Кав&shy;казского военного округа инициативной группой во главе с В. Г. Шредерс отправлен рапорт, в котором изложена мысль об учреждении Владикавказской общественной библиотеки. <br>
                 <strong> 1895 г.,22 июня — </strong> утвержден Устав Владикавказской общественной библиотеки за подписью Военного Министра Генерал-адъютанта Обручева. <br>

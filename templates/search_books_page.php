@@ -1,22 +1,28 @@
 <html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
 <head>
-    <title>Search_Books</title>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="/js/downloadScripts.js"></script>
-    <script src="/js/parserInfoBooks.js"></script>
+    <meta charset="utf-8" />
+    <!-- ----------------bootstrap-------------------- -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <script src="/js/LoDash.js"></script>
+    <title>Электронная библиотека</title>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="/js/downloadScripts.js?<?=filemtime('../js/downloadScripts.js')?>"></script>
+    <script src="/js/parserInfoBooks.js?<?=filemtime('../js/parserInfoBooks.js')?>"></script>
+
+    <script src="/js/LoDash.js?<?=filemtime('../js/LoDash.js')?>"></script>
+
+
+    <link rel="stylesheet" href="/css/style_Global_Vars.css?<?=filemtime('../css/style_Global_Vars.css')?>">
+    <link rel="stylesheet" href="/css/style_Header.css?<?=filemtime('../css/style_Header.css')?>">
+    <link rel="stylesheet" href="/css/style_search_books.css?<?=filemtime('../css/style_search_books.css')?>">
+
+    <link rel="stylesheet" href="/css/bookAnim/bookAnim.css?<?=filemtime('../css/bookAnim/bookAnim.css')?>">
+    <link rel="stylesheet" href="/css/bookNextPage/nextPage.css?<?=filemtime('../css/bookNextPage/nextPage.css')?>">
+    <link rel="stylesheet" href="/css/bookAnim/loadAnim.css?<?=filemtime('../css/bookAnim/loadAnim.css')?>">
 
     <!-- ----------------bootstrap-------------------- -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="/css/style_Global_Vars.css">
-    <link rel="stylesheet" href="/css/style_Header.css">
-    <link rel="stylesheet" href="/css/style_search_books.css">
-
-    <link rel="stylesheet" href="/css/bookAnim/bookAnim.css">
-    <link rel="stylesheet" href="/css/bookNextPage/nextPage.css">
-    <link rel="stylesheet" href="/css/bookAnim/loadAnim.css">
 
         <!-- ----------------bootstrap-------------------- -->
    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
@@ -26,35 +32,17 @@
 
 </head>
 <body>
-<header>
-    <?php include '../templates/includes/header.html';?>
-</header>
     <main>
 
+    <header>
+        <?php include '../templates/includes/header.html';?>
+    </header>
 
-    <script>
-        // if ([[${fromMainPage}]]){
-        //     fromMainSearch = true;
-        //     basicSearch = false;
-
-        //     searchStr = '[[${searchString}]]';
-        // }
-
-        // if ([[${basicSearch}]]) {
-        //     fromMainSearch = false;
-        //     basicSearch = true;
-        //     searchName = '[[${searchName}]]';
-        //     searchAuthor = '[[${searchAuthor}]]';
-        //     searchYear = '[[${searchYear}]]';
-        // }
-
-        // books = [[${bookList}]];
-    </script>
-    <div class="MainBlockSearch">
-        <div class="SearchBlock">
+    <div class="MainBlockSearch container">
+        <div class="SearchBlock container P0">
             <?php include '../templates/includes/input_search_page.html';?>
         </div>
-        <div class="cs-loader">
+        <div class="cs-loader container">
             <div class="cs-loader-inner">
                 <label>	●</label>
                 <label>	●</label>
@@ -64,14 +52,14 @@
                 <label>	●</label>
             </div>
         </div>
-        <div class="SearchInfo"></div>
-        <div class="PageNumBooksPlace"></div>
+        <div class="SearchInfo mt-4"></div>
+        <div class="PageNumBooksPlace mt-4"></div>
         <div class = "booksSearchResult">
             <script type="text/template" id="description">
                 <?php include 'includes/bookDescription.html';?>
             </script>
         </div>
-        <div class = "booksSearchResultHtml"></div>
+        <div class = "booksSearchResultHtml mt-4"></div>
         <div class="PageNumBooksTemplate">
             <script type="text/template" id="switchPages">
                 <?php include 'includes/pageSwitcher.html';?>

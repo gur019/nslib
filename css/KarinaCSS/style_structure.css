@@ -8,9 +8,6 @@ main{
     flex-direction: column;
     /*height: 100vh;*/
 }
-.MainBlock{
-    width: 960px;
-}
 #headerInfo{
     display: none;
 }
@@ -19,15 +16,13 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: 60px;
     font-family: var(--font_Famaly);
     font-size: var(--font_Size_Info_Block);
     /* border-bottom: 1px solid var(--bg_header); */
     color: #142638;
-    font-weight: 900;
 }
 .selectedPhotoPage{
-    margin: 30px 0 0 0;
     height: 216px;
 }
 .selectedPhotoPage img{
@@ -49,85 +44,68 @@ main{
 }
 
 
-
-.StructureBlock{
-    display: flex;
-    align-items: center;
-    background-color: #559ec9;
-    margin: 0 0 10px 0;
-    height: 400px;
-    width: 960px;
-}
-.StructureFloor{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.card{
     height: 100%;
-    width: 250px;
-    margin: 0 0 0 30px;
-    /*background-color: antiquewhite;*/
+    border-radius: 0 !important;
+    border: 0 !important;
+    background-color: rgba(0, 0, 0,.05) !important;
 }
-.StructureFloor ul{
-    list-style: none;
-    width: 100%;
-    text-align: center;
-}
-.StructureFloor li{
-    height: 60px;
-    line-height: 60px;
-    font-family: var(--font_Famaly);
-    font-size: 20px;
-    cursor: pointer;
-    /*background-color: red;*/
-    margin: 5px 0 5px 0;
-    color: #eee;
-    /*border-radius: 10px 0 0 10px;*/
-}
-.StructureA{
+.card-body{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 90%;
-    width: 90%;
-    background-color: #eee;
-    /*border-radius: 20px;*/
-    margin: 0 30px 0 0;
-    transition: all 0.3s;
+    justify-content: space-between;
+}
+.card-img-top{
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+.Bcolor{
+    background-color: var(--bg_header) !important;
+    border-radius: 0px !important;
+    border: 0 solid transparent !important;
+    font-size: 1rem !important;
+    font-weight: 100 !important;
+}
+.liNone{
+    list-style-type: none;
+}
+.IconLink{
+    height: 30px;
+    margin: 5px;
+}
+.IconLink:hover{
+    filter: drop-shadow(.2px .2px .5px #112f50);
 }
 
-.StructureText{
-    text-decoration: none;
-    /*line-height: 25px;*/
-    font-family: var(--font_Famaly);
-    font-size: 20px;
-    color: #222;
-}
-.StructureAMargin{
-    margin: 10px;
-}
-.StructureAMargin:hover{
-    background-color: rgba(0,0,0,0.2);
-}
-.StructureTel{
-    margin: 0 0 0 10px;
-    color: blue;
-    text-decoration: none;
-    line-height: 25px;
-    font-family: var(--font_Famaly);
-    font-size: 18px;
+/* ---------------------------------mobile------------------------------------------------------ */
+
+
+/* Малые девайсы («ландшафтные телефоны», >= 576px) */
+/* @media (max-width: 576px) {
+
+} */
+
+/* Средние девайсы («таблетки», >= 768px) */
+/* @media (max-width: 768px)  {
+
+} */
+
+/* Большие девайсы (десктопы, >= 992px) */
+@media (max-width: 992px) {
+    .disabledLine{
+        display: none;
+    }
+    .card__title{
+        font-size: 26px;
+    }
+    .InfoBlockSpan{
+        height: auto;
+    }
+
 }
 
-#struct_1{
-    transition: all 0.3s;
-    background-color: #eee;
-    color: #559ec9;
-}
-#struct_0,#struct_2,#struct_3,#struct_4{
-    transition: all 0.3s;
-    background-color: #559ec9;
-    color: #eee;
-}
-#floor_0,#floor_2,#floor_3,#floor_4{
-    transition: all 0.3s;
-    display: none;
-}
+/* Экстрабольшие девайсы (большие десктопы, >= 1200px) */
+/* @media (max-width: 1200px) {
+
+} */
+

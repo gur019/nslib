@@ -8,9 +8,6 @@ main{
     flex-direction: column;
     /*height: 100vh;*/
 }
-.MainBlock{
-    width: 960px;
-}
 #headerInfo{
     display: none;
 }
@@ -19,13 +16,12 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: 60px;
     font-family: var(--font_Famaly);
     font-size: var(--font_Size_Info_Block);
     /*border-bottom: 1px solid var(--bg_header);*/
 }
 .selectedPhotoPage{
-    margin: 30px 0 0 0;
     height: 216px;
 }
 .selectedPhotoPage img{

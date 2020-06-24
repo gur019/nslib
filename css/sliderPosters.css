@@ -168,7 +168,8 @@
 .slick-slider{
     height: fit-content;
     /* background-color: rebeccapurple; */
-    padding: 15px 0; 
+    padding: 15px 0;
+    display: flex !important; 
 }
 /* ---------------------------------mobile------------------------------------------------------ */
 

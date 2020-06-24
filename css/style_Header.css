@@ -183,6 +183,19 @@ header{
 	margin-right: 0 !important;
 }
 
+/* ---------------------------------message------------------------ */
+.message{
+	display: none;
+	position: fixed !important;
+	bottom: 0 !important;
+	background-color: #c0392b !important;
+	z-index: 10 !important;
+	color: #eee;
+	filter: drop-shadow(2px 2px 6px black);
+}
+
+
+
 /* --------------------------------------------------------------------------------------------- */
 /* ---------------------------------mobile------------------------------------------------------ */
 
@@ -251,6 +264,9 @@ header{
 	}
 	.MA2{
 		margin: .5rem;
+	}
+	.message h6{
+		font-size: 13px !important;
 	}
 
 }

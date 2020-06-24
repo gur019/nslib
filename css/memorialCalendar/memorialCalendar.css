@@ -1,0 +1,112 @@
+body{
+    background-color: #eee;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*height: 100vh;*/
+}
+
+#headerInfo{
+    display: none !important;
+}
+.InfoBlockSpan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-family: var(--font_Famaly);
+    font-size: var(--font_Size_Info_Block);
+    /*border-bottom: 1px solid var(--bg_header);*/
+}
+
+
+/* ------------------------------------------ */
+
+
+.Calendar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* height: 400px; */
+    /*background-color: #222;*/
+    /* margin: 0 0 30px 0; */
+}
+.CalendarRight{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: #222;
+	width: 50%;
+	height: 100%;
+}
+.CalendarLeft{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	color: #222;
+	width: 50%;
+	height: 100%;
+}
+
+.CalendarRight span{
+	/* text-transform: uppercase; */
+	color: #142638;
+	/* font-weight: bold; */
+	font-family: var(--font_Famaly);
+	/*font-size: 14px;*/
+	margin: 10px;
+}
+
+/* ---------------------------------mobile------------------------------------------------------ */
+
+
+/* Малые девайсы («ландшафтные телефоны», >= 576px) */
+/* @media (max-width: 576px) {
+
+} */
+
+/* Средние девайсы («таблетки», >= 768px) */
+/* @media (max-width: 768px)  {
+
+} */
+
+/* Большие девайсы (десктопы, >= 992px) */
+@media (max-width: 992px) {
+    .disabledLine{
+        display: none;
+    }
+    .InfoBlockSpan{
+        height: auto;
+    }
+	.Calendar{
+		flex-direction: column;
+	}
+	.CalendarLeft{
+		width: 100%;
+		height: initial;
+	}
+	.CalendarRight{
+		width: 100%;
+		height: initial;
+	}
+}
+
+/* Экстрабольшие девайсы (большие десктопы, >= 1200px) */
+/* @media (max-width: 1200px) {
+
+} */

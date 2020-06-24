@@ -69,7 +69,7 @@
                 <div class="BlockInfo">
                     <article class="BlockArticle bGreen">
                         <div class="BlockInfoImg"><img src="/media/library/img4.jpg" alt=""></div>
-                        <div class="BlockInfoTitle"><a class="BlockInfoLink link" href="/content/structure">Структура</a></div>
+                        <div class="BlockInfoTitle"><a class="BlockInfoLink link" href="../page/structure.php">Структура</a></div>
                     </article>
                 </div>
             </div>

@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="/css/style_Global_Vars.css?<?=filemtime('../../../css/style_Global_Vars.css')?>">
     <link rel="stylesheet" href="/css/style_Header.css?<?=filemtime('../../../css/style_Header.css')?>">
-    <link rel="stylesheet" href="/css/footer.css?<?=filemtime('../../../css/footer.css')?>">
+    <link rel="stylesheet" href="/css/style_footer.css?<?=filemtime('../../../css/style_footer.css')?>">
 
     <link rel="stylesheet" href="/css/KarinaCSS/eventArchive.css?<?=filemtime('../../../css/KarinaCSS/eventArchive.css')?>">
     <link rel="stylesheet" href="/css/photoGallery/style_photo_gallery.css?<?=filemtime('../../../css/photoGallery/style_photo_gallery.css')?>">

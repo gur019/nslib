@@ -7,6 +7,8 @@
 
     <title>Структура библиотеки</title>
 
+    <script src="/oldBrowser/IE.js?<?=filemtime('../../oldBrowser/IE.js')?>"></script>
+
     <link rel="stylesheet" href="/css/style_Global_Vars.css?<?=filemtime('../../css/style_Global_Vars.css')?>">
     <link rel="stylesheet" href="/css/style_Header.css?<?=filemtime('../../css/style_Header.css')?>">
     <link rel="stylesheet" href="/css/style_footer.css?<?=filemtime('../../css/style_footer.css')?>">
@@ -53,7 +55,7 @@
             <div class="row">
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/5282827.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Директор</h5>
@@ -66,7 +68,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Отдел регистрации читателей и  сервисного обслуживания</h5>
@@ -90,7 +92,7 @@
 
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Отдел комплектования и учета фондов</h5>
@@ -113,7 +115,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Отдел обработки и каталогизации документов</h5>
@@ -136,7 +138,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Абонемент художественной литературы</h5>
@@ -159,7 +161,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Отдел периодических изданий</h5>
@@ -182,7 +184,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Отдел искусств</h5>
@@ -205,7 +207,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Общий читальный зал</h5>
@@ -228,7 +230,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Информационно-библиографический отдел</h5>
@@ -251,7 +253,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Отдел редкой книги им. В.Г. Шредерс</h5>
@@ -274,7 +276,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Межбиблиотечный абонемент</h5>
@@ -297,7 +299,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Краеведческий отдел</h5>
@@ -320,7 +322,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Книжная палата</h5>
@@ -343,7 +345,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Отдел книгохранения</h5>
@@ -366,7 +368,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Музей истории библиотечного дела РСО-А</h5>
@@ -389,7 +391,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Выставочный зал</h5>
@@ -412,7 +414,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Зал художественной литературы</h5>
@@ -435,7 +437,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Зал иностранной литературы</h5>
@@ -458,7 +460,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Зал электронных ресурсов</h5>
@@ -481,7 +483,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Сектор оцифровки документов</h5>
@@ -504,7 +506,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Инновационно-методический отдел</h5>
@@ -527,7 +529,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Отдел автоматизации библиотечных процессов</h5>
@@ -541,7 +543,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Типография</h5>
@@ -564,7 +566,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Бухгалтерия</h5>
@@ -578,7 +580,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 mt-4">
-                    <div class="card">
+                    <div class="card cardEgde">
                         <img class="card-img-top" src="/media/structure/m44c2aa11a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">Отдел кадров</h5>

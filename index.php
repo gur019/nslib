@@ -7,6 +7,8 @@
 
     <title>ННБ Владикавказ</title>
 
+	  <script src="oldBrowser/IE.js?<?=filemtime('oldBrowser/IE.js')?>"></script>
+
     <link rel="stylesheet" href="css/style_Global_Vars.css?<?=filemtime('css/style_Global_Vars.css')?>">
     <link rel="stylesheet" href="css/style_index.css?<?=filemtime('css/style_index.css')?>">
     <link rel="stylesheet" href="css/sliderPosters.css?<?=filemtime('css/sliderPosters.css')?>">

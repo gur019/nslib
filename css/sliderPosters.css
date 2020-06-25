@@ -51,6 +51,7 @@
 .slick-slide {
     transition: all ease-in-out .3s;
     opacity: .2;
+    height: auto !important;
 }
 
 .slick-active {

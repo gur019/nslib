@@ -183,6 +183,12 @@ header{
 	margin-right: 0 !important;
 }
 
+
+.warning{
+	background-color: #b74b30;
+    padding: 0 10px;
+    border-radius: 3px;
+}
 /* ---------------------------------message------------------------ */
 .message{
 	display: none;

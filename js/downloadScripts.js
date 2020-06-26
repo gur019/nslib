@@ -31,6 +31,6 @@ function simpleDownload(searchData, docId){
 }
 
 function simpleViewForPdf(searchData, docId){
-    var url = window.location.protocol + '//'+ customHost + '/downloadBook?searchName=' + searchData + '&bid=' + docId;
+    var url = window.location.protocol + '//'+ customHost + '/downloadBook?searchName=' + searchData + '&bid=' + docId + '#toolbar=0';
     window.open(url);
 }

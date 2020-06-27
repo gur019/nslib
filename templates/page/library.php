@@ -194,7 +194,7 @@
             <div class="col-lg-4 col-sm-6 d-flex align-items-end mt-4">
                 <div class="BlockInfo">
                     <article class="BlockArticle bRed">
-                        <div class="BlockInfoImg"><img src="/media/library/img3.jpg" alt=""></div>
+                        <div class="BlockInfoImg"><img src="/media/library/new.jpg" alt=""></div>
                         <div class="BlockInfoTitle"><a class="BlockInfoLink link" href="/">Дары и дарители</a></div>
                     </article>
                 </div>

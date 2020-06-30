@@ -55,7 +55,6 @@
 
     <div class="MainBlock container">
 
-
         <?php include 'templates/includes/input_search_mainPage.html';?>
 
         <?php include 'templates/includes/posters.html';?>
